@@ -1,0 +1,32 @@
+* {
+    margin: auto;
+}
+
+nav {
+    background-color: #fb4c17;
+
+}
+
+#banner {
+    width: 100%;
+    background-image: url("photo/");
+}
+
+#description {
+    width: 100%;
+    background-color: #f78723;
+}
+
+h1 {
+
+
+}
+
+h1 span {
+    color: #dfdce3;
+    font: bold 50px Helvetica, Sans-Serif;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+
+}
