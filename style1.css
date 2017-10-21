@@ -8,8 +8,13 @@ nav {
 }
 
 #banner {
-    width: 100%;
-    background-image: url("photo/");
+    width: 1920px;
+    background-image: url("photo/candle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    box-shadow: inset 0 0 0 250px rgba(136, 226, 192, 0.7);
+
 }
 
 #description {
@@ -19,14 +24,15 @@ nav {
 
 h1 {
 
-
 }
 
 h1 span {
     color: #dfdce3;
-    font: bold 50px Helvetica, Sans-Serif;
+    font: bold 70px Helvetica, Sans-Serif;
     letter-spacing: 1px;
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
+    position: absolute;
+    top: 150px;
 
 }
