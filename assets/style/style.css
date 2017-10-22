@@ -1,5 +1,7 @@
+@import "normalize.css";
 * {
     margin: auto;
+    color: #ffffff;
 }
 
 nav {
@@ -9,7 +11,7 @@ nav {
 
 #banner {
     width: 1920px;
-    background-image: url("photo/candle.jpg");
+    background-image: url("../photo/candle.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
@@ -35,4 +37,18 @@ h1 span {
     position: absolute;
     top: 150px;
 
+}
+.text--center {text-align: center;}
+
+#funcionality {
+    padding: 50px 0;
+    background-color: #1C4089;
+}
+    .functionality-cont {
+        margin-top: 50px;
+        display: flex;
+    }
+.heading-level-2 {
+    color: #ffffff;
+    font-size: 36px;
 }
