@@ -39,7 +39,7 @@ h1 span {
 
 #information-about-the-team {
     width: 100%;
-    background-color: #1C4089;
+    background-color: white;
 }
 .first-line {
 
@@ -48,7 +48,6 @@ h1 span {
     position: relative;
     float: left;
     width: 40%;
-    height: 50%;
     text-align: justify;
     padding-right: 10px;
     padding-left: 10px;
@@ -62,12 +61,14 @@ h1 span {
     position: relative;
     float: right;
     width: 40%;
-    height: 50%;
     text-align: justify;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 100px;
     padding-top: 100px;
+}
+.clean{
+    clear: both;
 }
 .second-line {
 
@@ -76,18 +77,17 @@ h1 span {
     position: relative;
     float: left;
     width: 40%;
-    height: 50%;
     text-align: justify;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 100px;
     padding-top: 100px;
 }
+
 .Pawel {
     position: relative;
     float: right;
     width: 40%;
-    height: 50%;
     text-align: justify;
     padding-right: 10px;
     padding-left: 10px;
