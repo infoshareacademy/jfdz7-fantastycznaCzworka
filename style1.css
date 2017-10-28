@@ -52,7 +52,7 @@ h1 span {
     color: #1C4089;
     text-align: center;
     text-transform: uppercase;
-    font-family: Origin, sans-sarif;
+    font-family: Origin, serif;
 }
 #information-about-the-team p {
     padding-top: 1px;
@@ -60,12 +60,11 @@ h1 span {
     margin-right: 35px;
     text-align: justify;
     color: #0e2044;
-    font-family: Times;
+    font-family: Times, serif;
 }
 /*photo*/
 .photo {
-    margin-bottom: 1px;
-    margin-top: 1px;
+    margin: 1px, 0;
     width: 200px;
     background: white;
     padding: 10px;
@@ -76,7 +75,7 @@ h1 span {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    transform: rotate(5deg);
+    transform: rotate(-2deg) scale(0.8);
     transition: 0.4s all ease-in-out;
     will-change: transform;
     align-items: flex-start;
@@ -90,11 +89,6 @@ h1 span {
     font-family: Vijaya, serif;
     font-size: 20px;
 }
-
-.photo:nth-child(even) {
-    transform: rotate(-2deg) scale(0.8);
-}
-
 .photo:hover {
     opacity: 1;
     transform: scale(1.0);
@@ -109,23 +103,16 @@ h1 span {
     float: left;
     width: 40%;
     text-align: justify;
+    padding: 50px 10px 50px 10px;
     margin-left: 30px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 50px;
-    padding-top: 50px;
 }
-
 .Justyna {
     position: relative;
     float: right;
     width: 40%;
     text-align: justify;
     margin-right: 30px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding: 50px 10px 50px 10px;
 }
 .clean{
     clear: both;
@@ -141,20 +128,13 @@ h1 span {
     width: 40%;
     text-align: justify;
     margin-left: 30px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding: 5px 10px 5px 10px;
 }
-
 .Pawel {
     position: relative;
     float: right;
     width: 40%;
     text-align: justify;
     margin-right: 30px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding: 5px 10px 5px 10px;
 }
