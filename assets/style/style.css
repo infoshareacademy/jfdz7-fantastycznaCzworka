@@ -5,6 +5,8 @@
 body {
     width: 80%;
     background-color: rgb(43, 63, 61);
+    color:#ffffff;
+    font-family: Raleway, sans-serif;
 }
 
 nav {
@@ -58,6 +60,17 @@ h1 {
         margin-top: 50px;
         display: flex;
     }
+     .funcionality__box {
+         width: 25%;
+         padding: 0 10px;
+     }
+     .fuctionality__text {
+         font-weight: 500;
+     }
+     .functionality__image {
+         height: 128px;
+         width: 128px;
+     }
 .heading-level-2 {
     color: #ffffff;
     font-size: 36px;
