@@ -15,17 +15,17 @@ nav {
 .container {
     max-width: 1200px;
 }
-#banner {
+.banner {
     max-width: 100%;
-    background: url("../photo/candle.jpg") no-repeat;
+    background: url("../photo/cake.jpg") no-repeat;
     background-size: auto;
     height: 500px;
-    box-shadow: inset 0 0 0 250px rgba(136, 226, 192, 0.6);
+    /* box-shadow: inset 0 0 0 250px rgba(136, 226, 192, 0.6); */
 
 }
 
-#description {
-    width: 100%;
+.description {
+    max-width: 100%;
     background-color: #f78723;
     font-family:bold Raleway, sans-serif;
     font-size: 25px;
