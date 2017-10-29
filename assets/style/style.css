@@ -25,7 +25,7 @@ nav ul{
 
 li {
     float: left;
-    font-size: 18px;
+    font-size: 1.5vw;
     font-family: Raleway, sans-serif;
     padding: 14px 16px;
 }
@@ -51,7 +51,6 @@ li a{
     width: 100%;
     background-color: #f78723;
     font-family:bold Raleway, sans-serif;
-    font-size: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
 
@@ -61,12 +60,13 @@ p {
     padding: 10px;
     color: white;
     text-align: center;
+    font-size: 1.5vw;
 
 }
 
 h1 {
     color: white;
-    font: 100px Lobster, Sans-Serif;
+    font: 7vw Lobster, Sans-Serif;
     letter-spacing: 10px;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
