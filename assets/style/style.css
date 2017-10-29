@@ -3,7 +3,6 @@
     margin: auto;
 }
 body {
-    width: 80%;
     background-color: rgb(43, 63, 61);
     color:#ffffff;
     font-family: Raleway, sans-serif;
@@ -13,7 +12,9 @@ nav {
     background-color: #fb4c17;
 
 }
-
+.container {
+    max-width: 1200px;
+}
 #banner {
     max-width: 100%;
     background: url("../photo/candle.jpg") no-repeat;
