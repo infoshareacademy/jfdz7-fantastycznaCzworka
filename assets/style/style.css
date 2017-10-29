@@ -10,12 +10,35 @@ body {
 
 nav {
     background-color: #fb4c17;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
 }
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    float: left;
+    font-size: 18px;
+    font-family: Raleway, sans-serif;
+    padding: 14px 16px;
+}
+
+li a{
+    display: block;
+    text-decoration: none;
+}
+
 .container {
     max-width: 1200px;
 }
-#banner {
+.banner {
     max-width: 100%;
     background: url("../photo/candle.jpg") no-repeat;
     background-size: auto;
@@ -24,7 +47,7 @@ nav {
 
 }
 
-#description {
+.description {
     width: 100%;
     background-color: #f78723;
     font-family:bold Raleway, sans-serif;
@@ -36,13 +59,13 @@ nav {
 
 p {
     padding: 10px;
-    color: #dfdce3;
+    color: white;
     text-align: center;
 
 }
 
 h1 {
-    color: #dfdce3;
+    color: white;
     font: 100px Lobster, Sans-Serif;
     letter-spacing: 10px;
     background: rgba(0, 0, 0, 0.5);
@@ -75,4 +98,8 @@ h1 {
 .heading-level-2 {
     color: #ffffff;
     font-size: 36px;
+}
+
+.clear{
+    clear: both;
 }
