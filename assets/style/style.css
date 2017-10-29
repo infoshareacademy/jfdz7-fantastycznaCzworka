@@ -19,7 +19,7 @@ nav {
     max-width: 100%;
     background: url("../photo/cake.jpg") no-repeat;
     background-size: auto;
-    height: 500px;
+    height: 650px;
     /* box-shadow: inset 0 0 0 250px rgba(136, 226, 192, 0.6); */
 
 }
@@ -28,17 +28,30 @@ nav {
     max-width: 100%;
     background-color: #f78723;
     font-family:bold Raleway, sans-serif;
-    font-size: 25px;
+    font-size: 23px;
     padding-top: 15px;
     padding-bottom: 15px;
 
 }
+.newsletter {
+    background-color: #fb4c17;
+    font-size: 20px;
+}
 
 p {
     padding: 10px;
-    color: #dfdce3;
+    color: white;
     text-align: center;
+    font-family: Raleway, sans-serif;
 
+}
+
+.newsletter a {
+    text-decoration: none;
+}
+
+.newsletter a:hover{
+    
 }
 
 h1 {
