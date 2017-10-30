@@ -1,48 +1,69 @@
 @import "normalize.css";
+
 body {
     margin: 0;
-    background-color: rgb(43, 63, 61);
-    color:#ffffff;
+    background-color: #f78723;
+    color: #ffffff;
     font-family: Origin, sans-serif;
 }
 
 nav {
     background-color: #fb4c17;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
-#banner {
+
+.banner {
     position: relative;
     max-width: 100%;
-    background: url("../photo/candle.jpg") no-repeat;
+    background: url("../photo/cake.jpg") no-repeat;
     background-size: auto;
-    height: 500px;
-    box-shadow: inset 0 0 0 250px rgba(136, 226, 192, 0.6);
+    height: 600px;
+    /* box-shadow: inset 0 0 0 250px rgba(136, 226, 192, 0.6); */
 
 }
 
-#description {
-    width: 100%;
+.description {
+    max-width: 100%;
     background-color: #f78723;
     font-size: 25px;
+    font-family: bold Origin, sans-serif;
     padding-top: 15px;
     padding-bottom: 15px;
 
 }
 
+.newsletter {
+    background-color: #fb4c17;
+    font-size: 20px;
+}
+
 p {
     padding: 10px;
-    color: #dfdce3;
+    color: white;
     text-align: center;
+    font-family: Raleway, sans-serif;
+    margin: 0;
 
 }
 
+.newsletter a {
+    text-decoration: none;
+}
+
+.newsletter a:hover {
+    font-size: 120%;
+}
+
 h1 {
-    color: #dfdce3;
-    font: 100px Lobster, Sans-Serif;
+    color: white;
+    font: 6vw Lobster, Sans-Serif;
     letter-spacing: 10px;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -50,32 +71,44 @@ h1 {
     top: 150px;
     width: fit-content;
 }
-figure {text-align: center;}
-.text--center {text-align: center;}
+
+figure {
+    text-align: center;
+}
+
+.text--center {
+    text-align: center;
+}
 
 #funcionality {
     padding: 50px 0;
     background-color: #1C4089;
 }
-    .functionality-cont {
-        margin-top: 50px;
-        display: flex;
-    }
-     .funcionality__box {
-         width: 25%;
-         padding: 0 10px;
-     }
-     .fuctionality__text {
-         font-weight: 500;
-     }
-     .functionality__image {
-         height: 128px;
-         width: 128px;
-     }
+
+.functionality-cont {
+    margin-top: 50px;
+    display: flex;
+}
+
+.funcionality__box {
+    width: 25%;
+    padding: 0 10px;
+}
+
+.fuctionality__text {
+    font-weight: 500;
+}
+
+.functionality__image {
+    height: 128px;
+    width: 128px;
+}
+
 .heading-level-2 {
     color: #ffffff;
     font-size: 36px;
 }
+
 /*Section: information about the team*/
 #information-about-the-team {
     width: 100%;
@@ -83,12 +116,13 @@ figure {text-align: center;}
     background: linear-gradient(to bottom, #dfdce3 0%, #bac5db 100%);
     /*background: linear-gradient(to bottom, #f78723 0%, #f89f4e 100%);*/
 
-
 }
+
 .team__container {
     display: flex;
     flex-wrap: wrap;
 }
+
 #information-about-the-team h3 {
     padding-top: 1px;
     font-size: 31px;
@@ -96,6 +130,7 @@ figure {text-align: center;}
     text-align: center;
     text-transform: uppercase;
 }
+
 #information-about-the-team p {
     padding-top: 1px;
     padding-left: 20px;
@@ -104,11 +139,13 @@ figure {text-align: center;}
     color: #081730;
     font-size: 17px;
 }
+
 .person {
     flex: 0 50%;
     text-align: center;
 
 }
+
 /*photo*/
 .photo {
     width: 200px;
@@ -125,17 +162,25 @@ figure {text-align: center;}
     align-items: flex-start;
     text-align: center;
 }
+
 .photo img {
     flex-basis: 100%;
     width: 100%;
 }
+
 .photo figcaption {
     margin-top: 15px;
     font-family: Lobster, serif;
     font-size: 20px;
     color: black;
 }
+
 .photo:hover {
     opacity: 1;
     transform: scale(1.0);
+}
+
+
+.clear{
+    clear: both;
 }
