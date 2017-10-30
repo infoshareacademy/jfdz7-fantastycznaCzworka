@@ -1,24 +1,27 @@
 @import "normalize.css";
-* {
-    margin: auto;
-}
+
 body {
-    background-color: rgb(43, 63, 61);
-    color:#ffffff;
-    font-family: Raleway, sans-serif;
+    margin: 0;
+    background-color: #f78723;
+    color: #ffffff;
+    font-family: Origin, sans-serif;
 }
 
 nav {
     background-color: #fb4c17;
 
 }
+
 .container {
     max-width: 1200px;
+    margin: 0 auto;
 }
+
 .banner {
+    position: relative;
     max-width: 100%;
-    background: url("../photo/cake.jpg") no-repeat;
     background-size: auto;
+    background: url("../photo/cake.jpg") no-repeat center;
     height: 650px;
     /* box-shadow: inset 0 0 0 250px rgba(136, 226, 192, 0.6); */
 
@@ -27,12 +30,13 @@ nav {
 .description {
     max-width: 100%;
     background-color: #f78723;
-    font-family:bold Raleway, sans-serif;
-    font-size: 23px;
+    font-size: 25px;
+    font-family: bold Origin, sans-serif;
     padding-top: 15px;
     padding-bottom: 15px;
 
 }
+
 .newsletter {
     background-color: #fb4c17;
     font-size: 20px;
@@ -43,6 +47,7 @@ p {
     color: white;
     text-align: center;
     font-family: Raleway, sans-serif;
+    margin: 0;
 
 }
 
@@ -50,7 +55,7 @@ p {
     text-decoration: none;
 }
 
-.newsletter a:hover{
+.newsletter a:hover {
 
 }
 
@@ -60,53 +65,70 @@ h1 {
     letter-spacing: 10px;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    position: relative;
+    position: absolute;
     top: 150px;
     width: fit-content;
 }
-.text--center {text-align: center;}
+
+figure {
+    text-align: center;
+}
+
+.text--center {
+    text-align: center;
+}
 
 #funcionality {
     padding: 50px 0;
     background-color: #1C4089;
 }
-    .functionality-cont {
-        margin-top: 50px;
-        display: flex;
-    }
-     .funcionality__box {
-         width: 25%;
-         padding: 0 10px;
-     }
-     .fuctionality__text {
-         font-weight: 500;
-     }
-     .functionality__image {
-         height: 128px;
-         width: 128px;
-     }
+
+.functionality-cont {
+    margin-top: 50px;
+    display: flex;
+}
+
+.funcionality__box {
+    width: 25%;
+    padding: 0 10px;
+}
+
+.fuctionality__text {
+    font-weight: 500;
+}
+
+.functionality__image {
+    height: 128px;
+    width: 128px;
+}
+
 .heading-level-2 {
     color: #ffffff;
     font-size: 36px;
 }
+
 /*Section: information about the team*/
 #information-about-the-team {
     width: 100%;
     padding: 50px 0;
     background: linear-gradient(to bottom, #dfdce3 0%, #bac5db 100%);
     /*background: linear-gradient(to bottom, #f78723 0%, #f89f4e 100%);*/
-    display: flex;
-    flex-wrap: wrap;
 
 }
+
+.team__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #information-about-the-team h3 {
     padding-top: 1px;
     font-size: 31px;
     color: #1C4089;
     text-align: center;
     text-transform: uppercase;
-    font-family: Origin, serif;
 }
+
 #information-about-the-team p {
     padding-top: 1px;
     padding-left: 20px;
@@ -115,11 +137,13 @@ h1 {
     color: #081730;
     font-size: 17px;
 }
+
 .person {
     flex: 0 50%;
     text-align: center;
 
 }
+
 /*photo*/
 .photo {
     width: 200px;
@@ -136,16 +160,19 @@ h1 {
     align-items: flex-start;
     text-align: center;
 }
+
 .photo img {
     flex-basis: 100%;
     width: 100%;
 }
+
 .photo figcaption {
     margin-top: 15px;
     font-family: Lobster, serif;
     font-size: 20px;
     color: black;
 }
+
 .photo:hover {
     opacity: 1;
     transform: scale(1.0);
