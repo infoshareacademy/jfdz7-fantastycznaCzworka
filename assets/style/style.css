@@ -112,12 +112,16 @@ figure {
 /*Section: information about the team*/
 #information-about-the-team {
     width: 100%;
-    padding: 50px 0;
+    padding: 15px 0;
     background: linear-gradient(to bottom, #dfdce3 0%, #bac5db 100%);
     /*background: linear-gradient(to bottom, #f78723 0%, #f89f4e 100%);*/
 
 }
-
+.heading-level-3 {
+    color: #1C4089;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
 .team__container {
     display: flex;
     flex-wrap: wrap;
@@ -125,7 +129,7 @@ figure {
 
 #information-about-the-team h3 {
     padding-top: 1px;
-    font-size: 31px;
+    font-size: 25px;
     color: #1C4089;
     text-align: center;
     text-transform: uppercase;
