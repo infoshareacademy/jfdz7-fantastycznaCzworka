@@ -22,7 +22,7 @@ nav {
 .banner {
     position: relative;
     max-width: 100%;
-    background: url("../photo/cake.jpg") no-repeat;
+    background: url("../photo/cake2.jpg") no-repeat;
     background-size: auto;
     background-position-x: center;
     height: 600px;
@@ -64,12 +64,13 @@ p {
 
 h1 {
     color: white;
-    font: 6vw Lobster, Sans-Serif;
+    font: 7em Lobster, Sans-Serif;
     letter-spacing: 10px;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
     position: absolute;
     top: 150px;
+    right: 0;
     width: fit-content;
 }
 
