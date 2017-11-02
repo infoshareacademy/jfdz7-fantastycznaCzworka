@@ -14,6 +14,7 @@ nav {
     width: 100%;
 
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -33,7 +34,7 @@ nav {
 .description {
     max-width: 100%;
     background-color: #f78723;
-    font-size: 25px;
+    font-size: 2em;
     font-family: bold Origin, sans-serif;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -119,11 +120,13 @@ figure {
     /*background: linear-gradient(to bottom, #f78723 0%, #f89f4e 100%);*/
 
 }
+
 .heading-level-3 {
     color: #1C4089;
     font-size: 36px;
     margin-bottom: 15px;
 }
+
 .team__container {
     display: flex;
     flex-wrap: wrap;
@@ -186,7 +189,15 @@ figure {
     transform: scale(1.0);
 }
 
-
-.clear{
+.clear {
     clear: both;
+}
+
+@media screen and (max-width: 800px) /*Mobile*/{
+    h1{
+        font-size: 4em;
+    }
+    .description{
+        font-size: 1.5em
+    }
 }
