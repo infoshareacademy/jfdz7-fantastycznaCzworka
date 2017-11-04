@@ -14,6 +14,7 @@ nav {
     width: 100%;
 
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -22,8 +23,9 @@ nav {
 .banner {
     position: relative;
     max-width: 100%;
-    background: url("../photo/cake.jpg") no-repeat;
+    background: url("../photo/cake2.jpg") no-repeat;
     background-size: auto;
+    background-position-x: center;
     height: 600px;
     /* box-shadow: inset 0 0 0 250px rgba(136, 226, 192, 0.6); */
 
@@ -32,7 +34,7 @@ nav {
 .description {
     max-width: 100%;
     background-color: #f78723;
-    font-size: 25px;
+    font-size: 2em;
     font-family: bold Origin, sans-serif;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -63,12 +65,13 @@ p {
 
 h1 {
     color: white;
-    font: 6vw Lobster, Sans-Serif;
+    font: 7em Lobster, Sans-Serif;
     letter-spacing: 10px;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
     position: absolute;
     top: 150px;
+    right: 0;
     width: fit-content;
 }
 
@@ -117,11 +120,13 @@ figure {
     /*background: linear-gradient(to bottom, #f78723 0%, #f89f4e 100%);*/
 
 }
+
 .heading-level-3 {
     color: #1C4089;
     font-size: 36px;
     margin-bottom: 15px;
 }
+
 .team__container {
     display: flex;
     flex-wrap: wrap;
@@ -184,7 +189,15 @@ figure {
     transform: scale(1.0);
 }
 
-
-.clear{
+.clear {
     clear: both;
+}
+
+@media screen and (max-width: 800px) /*Mobile*/{
+    h1{
+        font-size: 4em;
+    }
+    .description{
+        font-size: 1.5em
+    }
 }
