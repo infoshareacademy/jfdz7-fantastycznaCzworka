@@ -46,6 +46,7 @@ li a:hover {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .banner {
@@ -64,14 +65,12 @@ li a:hover {
     background-color: #f78723;
     font-size: 2em;
     font-family: bold Origin, sans-serif;
-    padding-top: 15px;
-    padding-bottom: 15px;
+   padding: 40px 0;
 
 }
 
-.newsletter {
-    background-color: #fb4c17;
-    font-size: 20px;
+.description__text {
+    margin-bottom: 20px;
 }
 
 p {
@@ -82,13 +81,21 @@ p {
 
 }
 
-.newsletter a {
+.description__link {
+    display: block;
+    padding: 1rem .75rem;
+    background-color: #FC4A1A;
+    color: #ffffff;
     text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    text-transform: uppercase;
+}
+.description__link:hover {
+    opacity: 0.85;
 }
 
-.newsletter a:hover {
-    font-size: 120%;
-}
+
 
 h1 {
     color: white;
@@ -105,6 +112,22 @@ h1 {
 figure {
     text-align: center;
 }
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    border: none;
+}
 
 .text--center {
     text-align: center;
@@ -118,11 +141,11 @@ figure {
 .functionality-cont {
     margin-top: 50px;
     display: flex;
+    flex-flow: wrap;
 }
 
 .funcionality__box {
-    width: 25%;
-    padding: 0 10px;
+    flex:0 100%;
 }
 
 .fuctionality__text {
@@ -157,6 +180,7 @@ figure {
 .team__container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #information-about-the-team h3 {
@@ -168,16 +192,14 @@ figure {
 }
 
 #information-about-the-team p {
-    padding-top: 1px;
-    padding-left: 20px;
-    margin-right: 35px;
+
     text-align: justify;
     color: #081730;
     font-size: 17px;
 }
 
 .person {
-    flex: 0 50%;
+    flex: 100%;
     text-align: center;
 
 }
@@ -244,3 +266,18 @@ footer {
         font-size: 1.5em
     }
 }
+@media screen and (min-width: 431px) {
+    .funcionality__box {
+        flex:0 50%;
+    }
+}
+
+    @media screen and (min-width: 877px) {
+        .funcionality__box {
+
+            flex: 1;
+        }
+        .person {
+            flex: 0 45%;
+        }
+    }
