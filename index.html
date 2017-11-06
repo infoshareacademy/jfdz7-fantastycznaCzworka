@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Generator życzeń</title>
-    <link href="https://fonts.googleapis.com/css?family=Cookie|Lobster|Lobster+Two|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<main>
-    <header class="banner"> <!-- Tytuł strony i zdjęcie -->
+    <header id="main" class="banner"> <!-- Tytuł strony i zdjęcie -->
         <h1>Generator Życzeń</h1>
     </header>
 
-    <!-- <nav> poziome menu, zawsze na wierzchu, ruchome
-
      <nav>
         <ul>
-            <li>Menu1</li>
-            <li>Menu2</li>
-            <li>Menu3</li>
-            <li>Menu4</li>
+            <li><a href="#main">Główna</a></li>
+            <li><a href="#functions">Funkcje</a></li>
+            <li><a href="#about-team">O zespole</a></li>
+            <li></li>
         </ul>
     </nav>
     <div class="clear"></div>
@@ -35,7 +33,7 @@
             <button class="btn"><a class="description__link" href="#">Zapisz się na premierę</a></button>
         </div>
     </section>
-
+    <div class="anchor" id="functions"></div>
     <section id="funcionality">
         <div class="container">
             <h2 class="heading heading-level-2 text--center">Funkcje aplikacji</h2>
@@ -73,6 +71,7 @@
 
         </div>
     </section>
+        <div id="about-team" class="anchor"></div>
     <section id="information-about-the-team">
         <h2 class="heading heading-level-3 text--center">Nasz zespół</h2>
         <div class="container team__container">
@@ -134,6 +133,9 @@
         </div>
 
     </section>
+        <footer>
+            <span>Fantastyczna Czwórka 2017 &copy</span>
+        </footer>
 </main>
 </body>
 </html>

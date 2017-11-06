@@ -12,7 +12,35 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 20px 18px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 80%;
+}
+
+li a:hover {
+    background-color: #c23917;
+    color: white;
 }
 
 .container {
@@ -35,7 +63,7 @@ nav {
 .description {
     max-width: 100%;
     background-color: #f78723;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: bold Origin, sans-serif;
    padding: 40px 0;
 
@@ -49,7 +77,6 @@ p {
     padding: 10px;
     color: white;
     text-align: center;
-    font-family: Raleway, sans-serif;
     margin: 0;
 
 }
@@ -201,7 +228,6 @@ figure {
 
 .photo figcaption {
     margin-top: 15px;
-    font-family: Lobster, serif;
     font-size: 20px;
     color: black;
 }
@@ -215,11 +241,28 @@ figure {
     clear: both;
 }
 
-@media screen and (max-width: 800px) /*Mobile*/{
-    h1{
+.anchor {
+    display: block;
+    visibility: hidden;
+    height: 45px;
+    margin-top: -45px;
+
+}
+
+footer {
+    color: black;
+    background-color: #f78723;
+    font-size: 20px;
+    padding: 25px;
+    text-align: right;
+}
+
+@media screen and (max-width: 800px) /*Mobile*/ {
+    h1 {
         font-size: 4em;
     }
-    .description{
+
+    .description {
         font-size: 1.5em
     }
 }
