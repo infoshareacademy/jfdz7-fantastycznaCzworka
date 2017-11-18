@@ -1,6 +1,9 @@
 @import "normalize.css";
 
-html, body {height: 100%;}
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     background-color: #f78723;
@@ -9,20 +12,21 @@ body {
 }
 
 nav {
-    background-color: #fb4c17;
-    position: fixed;
+    background-color: rgba(255, 114, 67, 0);
     top: 0;
     width: 100%;
     overflow: hidden;
     z-index: 1;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    margin-left: auto;
 }
 
 li {
@@ -32,16 +36,30 @@ li {
 li a {
     display: block;
     text-align: center;
-    padding: 20px 18px;
+    padding: 29px 18px;
     text-decoration: none;
     color: white;
     font-size: 20px;
     width: 80%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 li a:hover {
-    background-color: #c23917;
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
+}
+
+nav figure {
+    float: none;
+
+}
+
+.logo {
+    width: 150px;
+    text-align: left;
+    margin-right: auto;
 }
 
 .container {
@@ -52,7 +70,7 @@ li a:hover {
 
 .banner {
     position: relative;
-    background: url("../photo/cake.jpg")  no-repeat;
+    background: url("../photo/cake.jpg") no-repeat;
     background-size: cover;
     height: 100%;
     /* box-shadow: inset 0 0 0 250px rgba(136, 226, 192, 0.6); */
@@ -64,7 +82,7 @@ li a:hover {
     background-color: #f78723;
     font-size: 1.5em;
     font-family: bold Origin, sans-serif;
-   padding: 40px 0;
+    padding: 40px 0;
 
 }
 
@@ -90,15 +108,14 @@ p {
     border-radius: .25rem;
     text-transform: uppercase;
 }
+
 .description__link:hover {
     opacity: 0.85;
 }
 
-
-
 h1 {
     color: white;
-    font: 7em Lobster, Sans-Serif;
+    font: 5em Lobster, Sans-Serif;
     letter-spacing: 10px;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -112,6 +129,7 @@ h1 {
 figure {
     text-align: center;
 }
+
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -145,7 +163,7 @@ figure {
 }
 
 .funcionality__box {
-    flex:0 100%;
+    flex: 0 100%;
 }
 
 .fuctionality__text {
@@ -266,18 +284,20 @@ footer {
         font-size: 1.5em
     }
 }
+
 @media screen and (min-width: 431px) {
     .funcionality__box {
-        flex:0 50%;
+        flex: 0 50%;
     }
 }
 
-    @media screen and (min-width: 877px) {
-        .funcionality__box {
+@media screen and (min-width: 877px) {
+    .funcionality__box {
 
-            flex: 1;
-        }
-        .person {
-            flex: 0 45%;
-        }
+        flex: 1;
     }
+
+    .person {
+        flex: 0 45%;
+    }
+}
