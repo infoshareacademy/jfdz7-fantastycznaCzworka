@@ -208,15 +208,15 @@ figure {
     font-size: 25px;
     color: #1C4089;
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
-#information-about-the-team p {
+/*#information-about-the-team p {*/
 
-    text-align: justify;
-    color: #081730;
-    font-size: 17px;
-}
+    /*text-align: justify;*/
+    /*color: #081730;*/
+    /*font-size: 17px;*/
+/*}*/
 
 .person {
     flex: 100%;
@@ -234,13 +234,15 @@ figure {
     border: 1px solid #c0c0c0;
     box-sizing: border-box;
     display: inline-block;
-    transform: rotate(-2deg) scale(0.8);
+    /*transform: rotate(-3deg) scale(0.8);*/
     transition: 0.4s all ease-in-out;
     will-change: transform;
     align-items: flex-start;
     text-align: center;
 }
-
+/*.photo-rotate {*/
+    /*transform: rotate(5deg) scale(0.8);*/
+/*}*/
 .photo img {
     flex-basis: 100%;
     width: 100%;
@@ -300,6 +302,6 @@ footer {
     }
 
     .person {
-        flex: 0 45%;
+        flex: 0;
     }
 }
