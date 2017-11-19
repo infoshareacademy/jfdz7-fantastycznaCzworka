@@ -107,6 +107,8 @@ p {
     border: 1px solid transparent;
     border-radius: .25rem;
     text-transform: uppercase;
+    cursor: default;
+
 }
 
 .description__link:hover {
