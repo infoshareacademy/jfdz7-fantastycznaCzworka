@@ -52,7 +52,7 @@ li a:hover {
 }
 
 nav figure {
-    margin:0;
+    margin: 0;
 
 }
 
@@ -78,11 +78,17 @@ nav figure {
 }
 
 .description {
-    max-width: 100%;
-    background-color: #f78723;
+    width: 100%;
+    /*background-color: #f78723;*/
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
     font-size: 1.5em;
     font-family: bold Origin, sans-serif;
-    padding: 40px 0;
+    padding: 25px 0;
+    position: absolute;
+    top: 70%;
+    right: 0;
+    transform: translateY(-50%);
 
 }
 
@@ -283,7 +289,7 @@ footer {
     }
 
     .description {
-        font-size: 1.5em
+        font-size: 1.3em
     }
 }
 
@@ -295,7 +301,6 @@ footer {
 
 @media screen and (min-width: 877px) {
     .funcionality__box {
-
         flex: 1;
     }
 
