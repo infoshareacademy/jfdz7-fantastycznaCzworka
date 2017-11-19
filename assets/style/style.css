@@ -262,8 +262,8 @@ figure {
 .anchor {
     display: block;
     visibility: hidden;
-    height: 45px;
-    margin-top: -45px;
+    /*height: 45px;*/
+    /*margin-top: -45px;*/
 
 }
 
