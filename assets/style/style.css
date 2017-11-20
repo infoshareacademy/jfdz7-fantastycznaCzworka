@@ -85,7 +85,7 @@ nav figure {
     font-family: bold Origin, sans-serif;
     padding: 25px 0;
     position: absolute;
-    top: 600px;
+    top: 529px;
     right: 0;
     transform: translateY(-50%);
 
@@ -127,7 +127,7 @@ h1 {
     background: rgba(0, 0, 0, 0.4);
     padding: 10px;
     position: absolute;
-    top: 332px;
+    top: 260px;
     transform: translateY(-50%);
     right: 0;
 
@@ -294,7 +294,7 @@ footer {
     }
 
     .description {
-        font-size: 1.3em
+        font-size: 16px;
     }
 }
 
