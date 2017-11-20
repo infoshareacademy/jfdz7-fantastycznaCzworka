@@ -78,15 +78,14 @@ nav figure {
 }
 
 .description {
-    width: 100%;
     /*background-color: #f78723;*/
     color: white;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     font-size: 1.5em;
     font-family: bold Origin, sans-serif;
     padding: 25px 0;
     position: absolute;
-    top: 70%;
+    top: 600px;
     right: 0;
     transform: translateY(-50%);
 
@@ -125,10 +124,10 @@ h1 {
     color: white;
     font: 5em Lobster, Sans-Serif;
     letter-spacing: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     padding: 10px;
     position: absolute;
-    top: 40%;
+    top: 332px;
     transform: translateY(-50%);
     right: 0;
 
@@ -281,6 +280,12 @@ footer {
     font-size: 20px;
     padding: 25px;
     text-align: right;
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 7em;
+    }
 }
 
 @media screen and (max-width: 800px) /*Mobile*/ {
