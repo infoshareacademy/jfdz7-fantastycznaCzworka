@@ -8,58 +8,53 @@ body {
     margin: 0;
     background-color: #f78723;
     color: #ffffff;
-    font-family: Origin, sans-serif;
+    /*font-family: Origin, sans-serif;*/
+    font-family: 'Lato', sans-serif;
 }
+button {font-family: 'Lato', sans-serif;}
 
-nav {
-    background-color: rgba(255, 114, 67, 0);
-    top: 0;
-    width: 100%;
-    overflow: hidden;
+.menu-nav {
+    background-color: rgba(74, 42, 45, .4);
     z-index: 1;
     display: flex;
-    align-items: center;
-    padding-top: 20px;
+    position: fixed;
+    width:100%;
 }
 
-nav ul {
+.menu-nav__list {
+    display: flex;
     list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    margin: 0 0 0 auto;
+    margin:0 0 0 auto;
 }
-
-li {
-    float: left;
+.menu-nav__list-item {
+    margin-right: 10px;
 }
-
-li a {
+li.menu-nav__list-item:last-child {
+    margin-right: 0;
+}
+.menu-nav__list-item a {
+    line-height: 100px;
     display: block;
-    text-align: center;
-    padding: 29px 18px;
+    padding: 0 18px;
     text-decoration: none;
     color: white;
-    font-size: 20px;
-    width: 80%;
+    font-size: 1.1em;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 700;
 }
 
-li a:hover {
+.menu-nav__list-item a:hover {
     background-color: rgba(0, 0, 0, 0.3);
-    color: white;
 }
 
-nav figure {
+.menu-nav figure {
     margin:0;
 
 }
 
 .logo {
     width: 150px;
-    text-align: left;
-    margin-right: auto;
 }
 
 .container {
