@@ -6,8 +6,8 @@
     function animateScroll() {
 
         if(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop  > 0) {
-            window.scrollBy(0, -5);
-            setTimeout(animateScroll, 10);
+            window.scrollBy(0, -10);
+            setTimeout(animateScroll, 5);
         }
 
     }
@@ -22,7 +22,7 @@
 
     window.addEventListener("scroll", function() {
 
-        if(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop >= 10) {
+        if(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop >= 2000) {
             button.classList.remove("hidden");
         } else {
             button.classList.add("hidden");

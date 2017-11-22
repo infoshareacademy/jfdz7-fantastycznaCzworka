@@ -13,14 +13,14 @@ body {
 }
 button {font-family: 'Lato', sans-serif;}
 .scroll-top {
-    transition: visibility 0.5s, opacity 0.5s;
+    transition: visibility 0.8s, opacity 0.8s;
     position: fixed;
     bottom: 30px;
     right: 30px;
     color:#000000;
     opacity: 1;
     cursor: pointer;
-    animation: scroll 1s linear infinite;
+    animation: scroll 1s infinite alternate;
 }
 .scroll-top.hidden {
     visibility: hidden;
