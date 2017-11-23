@@ -270,6 +270,9 @@ figure {
     align-items: flex-start;
     text-align: center;
 }
+.photo-sephi {
+    filter: grayscale(70%);
+}
 .photo img {
     flex-basis: 100%;
     width: 100%;
