@@ -4,38 +4,42 @@
     <meta charset="UTF-8">
     <title>Generator życzeń</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/font-awesome.min.css">
     <link rel="stylesheet" href="assets/style/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/photo/LogoGŻ.png" type="image/png" sizes="16x16">
+
 </head>
 <body>
 <!-- Tytuł strony i zdjęcie -->
     <header id="main" class="banner">
-        <nav>
+        <nav class="menu-nav">
             <figure>
-                <img class="logo" src="Logo/LogoGŻ.png">
+                <a href="#"><img class="logo" src="assets/photo/LogoGŻ.png"></a>
             </figure>
-            <ul>
-                <li><a href="#main">Główna</a></li>
-                <li><a href="#functions">Funkcje</a></li>
-                <li><a href="#about-team">Zespół</a></li>
-                <li></li>
+            <ul class="menu-nav__list">
+                <li class="menu-nav__list-item"><a href="#form">Zapis na premierę</a></li>
+                <li class="menu-nav__list-item"><a href="#functions">Funkcje</a></li>
+                <li class="menu-nav__list-item"><a href="#about-team">Zespół</a></li>
             </ul>
         </nav>
-        <h1>Generator Życzeń</h1>
+
+        <section class="description text--center"> <!-- krotki opis  i tytul-->
+            <div class="container">
+                <h1>Generator Życzeń</h1>
+                <p class="description__text"> Prosta i intyucyjna obsługa sprawia że za pomocą kilku kliknięć ustawisz automatyczne generowanie i
+                    wysyłanie życzeń do swoich znajomych na Facebooku. Rozległa baza powoduje, że ta sama osoba nigdy nie
+                    dostanie jednakowych życzeń!
+                </p>
+                <button class="btn"><a class="description__link" href="#">Wkrótce zapis na premierę</a></button>
+            </div>
+        </section>
     </header>
 
     <div class="clear"></div>
 
     <main> <!-- zawartość całej strony -->
-    <section class="description text--center"> <!-- krotki opis -->
-        <div class="container">
-            <p class="description__text"> Prosta i intyucyjna obsługa sprawia że za pomocą kilku kliknięć ustawisz automatyczne generowanie i
-                wysyłanie życzeń do swoich znajomych na Facebooku. Rozległa baza powoduje, że ta sama osoba nigdy nie
-                dostanie jednakowych życzeń!
-            </p>
-            <button class="btn"><a class="description__link" href="#">Wkrótce zapis na premierę</a></button>
-        </div>
-    </section>
     <div class="anchor" id="functions"></div>
     <section id="funcionality">
         <div class="container">
@@ -121,5 +125,7 @@
             <span>Fantastyczna Czwórka 2017 &copy</span>
         </footer>
 </main>
+<span class="scroll-top hidden"><i class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i></span>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
