@@ -128,7 +128,7 @@ p {
 .description__link {
     display: block;
     padding: 1rem .75rem;
-    background-color: #FC4A1A;
+    background-color: #CEA76C;
     color: #ffffff;
     text-decoration: none;
     border: 1px solid transparent;
@@ -182,7 +182,7 @@ figure {
 
 #funcionality {
     padding: 50px 0;
-    background-color: #1C4089;
+    background-color: #9B3F3F;
 }
 
 .functionality-cont {
@@ -213,13 +213,14 @@ figure {
 #information-about-the-team {
     width: 100%;
     padding: 15px 0;
-    background: linear-gradient(to bottom, #dfdce3 0%, #bac5db 100%);
+    background: #CFB994;
+    /*background: linear-gradient(to bottom, #dfdce3 0%, #bac5db 100%);*/
     /*background: linear-gradient(to bottom, #f78723 0%, #f89f4e 100%);*/
 
 }
 
 .heading-level-3 {
-    color: #1C4089;
+    color: #000000;
     font-size: 36px;
     margin-bottom: 15px;
 }
@@ -233,7 +234,7 @@ figure {
 #information-about-the-team h3 {
     padding-top: 1px;
     font-size: 25px;
-    color: #1C4089;
+    color: #000000;
     text-align: center;
     text-transform: uppercase;
 }
@@ -298,7 +299,7 @@ figure {
 
 footer {
     color: white;
-    background-color: #f78723;
+    background-color: #66614F;
     font-size: 20px;
     padding: 25px;
     text-align: right;
