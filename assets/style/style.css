@@ -260,19 +260,15 @@ figure {
     width: 200px;
     background: rgba(255, 255, 255, 0.6);
     padding: 7px;
-    opacity: 0.9;
+    opacity: 1;
     border-radius: 5px;
     box-sizing: border-box;
     display: inline-block;
-    transform: scale(0.9);
+    transform: scale(1.0);
     transition: 0.4s all ease-in-out;
     will-change: transform;
     align-items: flex-start;
     text-align: center;
-}
-.photo:hover {
-    opacity: 1;
-    transform: scale(1.0);
 }
 .photo img {
     flex-basis: 100%;
