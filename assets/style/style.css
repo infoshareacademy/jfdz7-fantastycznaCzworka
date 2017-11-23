@@ -187,6 +187,7 @@ figure {
     width: 100%;
     padding: 15px 0;
     background: linear-gradient(to bottom, #dfdce3 0%, #bac5db 100%);
+    padding: 50px 0px;
     /*background: linear-gradient(to bottom, #f78723 0%, #f89f4e 100%);*/
 
 }
@@ -194,7 +195,7 @@ figure {
 .heading-level-3 {
     color: #1C4089;
     font-size: 36px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 .team__container {
@@ -205,31 +206,34 @@ figure {
 
 #information-about-the-team h3 {
     padding-top: 1px;
-    font-size: 25px;
+    font-size: 23px;
     color: #1C4089;
     text-align: center;
+    margin-bottom: 8px;
     /*text-transform: uppercase;*/
 }
-
-/*#information-about-the-team p {*/
-
-    /*text-align: justify;*/
-    /*color: #081730;*/
-    /*font-size: 17px;*/
-/*}*/
-
+.contact-person{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact-img {
+    max-width: 40px;
+    max-height: 40px;
+    top: 8px;
+    flex: 1;
+}
 .person {
     flex: 100%;
     text-align: center;
 
 }
-
 /*photo*/
 .photo {
     width: 200px;
     background: white;
     padding: 10px;
-    opacity: 0.8;
+    opacity: 0.9;
     border-radius: 5px;
     border: 1px solid #c0c0c0;
     box-sizing: border-box;
@@ -240,20 +244,10 @@ figure {
     align-items: flex-start;
     text-align: center;
 }
-/*.photo-rotate {*/
-    /*transform: rotate(5deg) scale(0.8);*/
-/*}*/
 .photo img {
     flex-basis: 100%;
     width: 100%;
 }
-
-.photo figcaption {
-    margin-top: 15px;
-    font-size: 20px;
-    color: black;
-}
-
 .photo:hover {
     opacity: 1;
     transform: scale(1.0);
