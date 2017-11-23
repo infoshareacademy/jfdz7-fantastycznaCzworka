@@ -1,0 +1,34 @@
+(function() {
+
+
+    var button = document.querySelector(".scroll-top");
+
+    function animateScroll() {
+
+        if(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop  > 0) {
+            window.scrollBy(0, -10);
+            setTimeout(animateScroll, 5);
+        }
+
+    }
+
+    button.addEventListener("click", function(e) {
+
+        e.stopPropagation();
+
+        animateScroll();
+
+    }, false);
+
+    window.addEventListener("scroll", function() {
+
+        if(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop >= 2000) {
+            button.classList.remove("hidden");
+        } else {
+            button.classList.add("hidden");
+        }
+
+    }, false);
+
+
+})();

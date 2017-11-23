@@ -8,58 +8,80 @@ body {
     margin: 0;
     background-color: #f78723;
     color: #ffffff;
-    font-family: Origin, sans-serif;
+    /*font-family: Origin, sans-serif;*/
+    font-family: 'Lato', sans-serif;
+}
+button {font-family: 'Lato', sans-serif;}
+.scroll-top {
+    transition: visibility 0.8s, opacity 0.8s;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color:#000000;
+    opacity: 0.8;
+    cursor: pointer;
+    animation: scroll 1s infinite alternate;
+}
+.scroll-top.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+@keyframes scroll {
+    0% {bottom: 30px; }
+
+    100% {bottom: 40px;}
 }
 
-nav {
-    background-color: rgba(255, 114, 67, 0);
-    top: 0;
-    width: 100%;
-    overflow: hidden;
+.menu-nav {
+    background-color: rgba(48, 23, 27, .4);
     z-index: 1;
     display: flex;
+    width:100%;
+}
+
+.menu-nav__list {
+    display: flex;
     align-items: center;
-    padding-top: 20px;
-}
-
-nav ul {
     list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    margin: 0 0 0 auto;
+    margin:0 0 0 auto;
+}
+.menu-nav__list-item {
+    margin: 0 15px;
 }
 
-li {
-    float: left;
-}
-
-li a {
+.menu-nav__list-item a {
+    position: relative;
     display: block;
-    text-align: center;
-    padding: 29px 18px;
+    padding: 10px 0;
     text-decoration: none;
-    color: white;
-    font-size: 20px;
-    width: 80%;
-    letter-spacing: 2px;
+    color: #ffffff;
     text-transform: uppercase;
+    font-size: 1.25em;
+    letter-spacing: 2px;
     font-weight: 700;
 }
-
-li a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
+.menu-nav__list-item a:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffffff;
+    transition: width .25s ease-in-out;
 }
 
-nav figure {
-    margin: 0;
+.menu-nav__list-item a:hover:after {
+    width: 100%;
+}
+
+.menu-nav figure {
+    margin:0;
 
 }
 
 .logo {
     width: 150px;
-    text-align: left;
-    margin-right: auto;
 }
 
 .container {
