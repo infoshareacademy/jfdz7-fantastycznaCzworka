@@ -6,7 +6,7 @@
     function animateScroll() {
 
         if(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop  > 0) {
-            window.scrollBy(0, -30);
+            window.scrollBy(0, -20);
             setTimeout(animateScroll, 5);
         }
 
