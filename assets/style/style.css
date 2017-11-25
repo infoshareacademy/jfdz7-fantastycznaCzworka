@@ -224,8 +224,8 @@ figure {
 }
 
 .heading-level-3 {
-    color: #000000;
-    font-size: 36px;
+    color: #421516;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
@@ -237,8 +237,9 @@ figure {
 
 #information-about-the-team h3 {
     padding-top: 1px;
-    font-size: 21px;
-    color: #000565;
+    font-size: 22px;
+    color: #2C1212;
+    /*color: #000565;*/
     /*color: #1C4089;*/
     text-align: center;
     margin: 0px 0px 6px;
@@ -260,7 +261,7 @@ figure {
 /*photo*/
 .photo {
     width: 200px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(44, 18, 18, 0.2);
     padding: 7px;
     opacity: 1;
     border-radius: 5px;
@@ -272,9 +273,9 @@ figure {
     align-items: flex-start;
     text-align: center;
 }
-.photo-sephi {
-    filter: grayscale(70%);
-}
+/*.photo-sephi {*/
+    /*filter: grayscale(100%);*/
+/*}*/
 .photo img {
     flex-basis: 100%;
     width: 100%;
