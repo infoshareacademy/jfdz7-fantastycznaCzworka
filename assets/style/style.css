@@ -213,6 +213,16 @@ figure {
     font-size: 28px;
 }
 
+.func li i{
+    padding-right: 10px;
+}
+
+.func li {
+    list-style: none;
+    padding: 5px 0 5px 23px;
+    font-size: 15px;
+}
+
 /*Section: information about the team*/
 #information-about-the-team {
     width: 100%;
