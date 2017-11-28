@@ -14,14 +14,15 @@
 <body>
 <!-- Tytuł strony i zdjęcie -->
     <header id="main" class="banner">
-        <nav class="menu-nav">
+        <nav class="menu-nav" id="nav">
             <figure>
                 <a href="#"><img class="logo" src="assets/photo/LogoGŻ.png"></a>
             </figure>
             <ul class="menu-nav__list">
-                <li class="menu-nav__list-item"><a href="#form">Zapis na premierę</a></li>
+                <li class="menu-nav__list-item active"><a href="#form">Zapis na premierę</a></li>
                 <li class="menu-nav__list-item"><a href="#functions">Funkcje</a></li>
                 <li class="menu-nav__list-item"><a href="#about-team">Zespół</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
             </ul>
         </nav>
 
@@ -126,6 +127,7 @@
         </footer>
 </main>
 <span class="scroll-top hidden"><i class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i></span>
+<script src="assets/js/menu.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
