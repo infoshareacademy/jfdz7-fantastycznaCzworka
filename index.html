@@ -12,18 +12,24 @@
 
 </head>
 <body>
-<!-- Tytuł strony i zdjęcie -->
+
     <header id="main" class="banner">
-        <nav class="menu-nav" id="nav">
-            <figure>
-                <a href="#"><img class="logo" src="assets/photo/LogoGŻ.png"></a>
-            </figure>
+        <nav class="desktop menu-nav">
+            <a href="#main"><img src="assets/photo/LogoGŻ.png"></a>
             <ul class="menu-nav__list">
-                <li class="menu-nav__list-item active"><a href="#form">Zapis na premierę</a></li>
+                <li class="menu-nav__list-item"><a href="#form">Zapisz się na premiere</a></li>
                 <li class="menu-nav__list-item"><a href="#functions">Funkcje</a></li>
                 <li class="menu-nav__list-item"><a href="#about-team">Zespół</a></li>
-                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
             </ul>
+        </nav>
+
+        <nav class="mobile">
+            <button class>Toggle</button>
+            <div>
+                <a href="#form">Zapisz się na premiere</a>
+                <a href="#functions">Funkcje</a>
+                <a href="#about-team">Zespół</a>
+            </div>
         </nav>
 
         <section class="description text--center"> <!-- krotki opis  i tytul-->
