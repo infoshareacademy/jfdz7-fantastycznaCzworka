@@ -14,22 +14,21 @@
 <body>
 
     <header id="main" class="banner">
-        <nav class="desktop menu-nav">
-            <a href="#main"><img src="assets/photo/LogoGŻ.png"></a>
-            <ul class="menu-nav__list">
-                <li class="menu-nav__list-item"><a href="#form">Zapisz się na premiere</a></li>
-                <li class="menu-nav__list-item"><a href="#functions">Funkcje</a></li>
-                <li class="menu-nav__list-item"><a href="#about-team">Zespół</a></li>
-            </ul>
-        </nav>
 
-        <nav class="mobile">
-            <button class>Toggle</button>
-            <div>
-                <a href="#form">Zapisz się na premiere</a>
-                <a href="#functions">Funkcje</a>
-                <a href="#about-team">Zespół</a>
-            </div>
+        <input id="toggle-menu" type="checkbox"/>
+        <label for="toggle-menu" class="menu-on">Menu ON</label>
+        <label for="toggle-menu" class="menu-off"></label>
+
+        <nav class="primary-nav men">
+            <figure>
+                <img class="logo" src="LogoGŻ.png">
+            </figure>
+            <ul class="menu-nav__list">
+                <li class="menu-nav__list-item"><a href="#form">Zapis na premierę</a></li>
+                <li class="menu-nav__list-item"><a href="#">Funkcje</a></li>
+                <li class="menu-nav__list-item"><a href="#">Zespół</a></li>
+            </ul>
+
         </nav>
 
         <section class="description text--center"> <!-- krotki opis  i tytul-->
