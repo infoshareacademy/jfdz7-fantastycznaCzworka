@@ -57,6 +57,7 @@ nav figure {
     right: 20px;
     z-index: 1002;
     padding: 15px;
+    cursor: pointer;
 }
 .hamburger{
     width: 50px;
