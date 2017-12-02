@@ -243,7 +243,6 @@ figure {
 .funcionality__box {
     flex: 0 100%;
 }
-
 .fuctionality__text {
     font-weight: 500;
 }
@@ -257,16 +256,31 @@ figure {
     color: #ffffff;
     font-size: 28px;
 }
-
-.func li i{
-    padding-right: 10px;
+/*Additional information*/
+.heading-level-4 {
+    color: #ffffff;
+    font-size: 23px;
+}
+.functionality-cont2 {
+    margin: 60px 40px 0px 80px;
+    display: flex;
+    flex-flow: wrap;
+}
+.funcionality__box2 {
+    flex: 0 50%;
+    margin-bottom: 20px;
+}
+.functionality__image2 {
+    height: 60px;
+    width: 60px;
+}
+.funcionality__box2 h4 {
+    display: inline;
+}
+.funcionality__box2 figure{
+    display: inline;
 }
 
-.func li {
-    list-style: none;
-    padding: 5px 0 5px 23px;
-    font-size: 15px;
-}
 
 /*Section: information about the team*/
 #information-about-the-team {
@@ -379,7 +393,19 @@ footer {
     .person {
         flex: 0 50%;
     }
-
+    .functionality-cont2 {
+        margin: 60px 0px 0px 0px;
+    }
+    .funcionality__box2 {
+        flex: 0 50%;
+        margin-bottom: 1px;
+    }
+    .funcionality__box2 h4 {
+        display: block;
+    }
+    .funcionality__box2 figure{
+        display: block;
+    }
 }
 
 @media screen and (min-width: 431px) {
@@ -390,12 +416,20 @@ footer {
     .person {
         flex: 0 50%;
     }
-
+    .funcionality__box2 {
+        flex: 0 50%;
+    }
+    .functionality-cont2 {
+        margin: 60px 0px 0px 0px;
+    }
 }
 
 @media screen and (min-width: 877px) {
     .funcionality__box {
         flex: 1;
+    }
+    .funcionality__box2 {
+        flex: 0 50%;
     }
 
     .person {
@@ -431,5 +465,8 @@ footer {
 @media screen and (min-width: 1201px) {
     .description {
         width: 50%;
+    }
+    .functionality-cont2 {
+        margin: 60px 120px 0px 160px;
     }
 }
