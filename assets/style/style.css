@@ -252,12 +252,38 @@ figure {
     height: 128px;
     width: 128px;
 }
+.heading {
 
-.heading-level-2 {
-    color: #ffffff;
     font-size: 28px;
 }
 
+.heading-level-2 {
+    color: #ffffff;
+
+}
+.heading-level-3 {
+    color: #421516;
+    margin-bottom: 20px;
+}
+.section-form {
+    padding: 50px 0;
+    background: #C69E68;
+}
+
+.form__input {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px;
+    border-radius: 10px;
+}
+.form__btn {
+    margin-left: 20px;
+    padding:10px 15px;
+    cursor: pointer;
+    background: #9B3F3F;
+    border-radius: 10px;
+    color: #ffffff;
+}
 /*Section: information about the team*/
 #information-about-the-team {
     width: 100%;
@@ -268,11 +294,7 @@ figure {
     /*background: linear-gradient(to bottom, #f78723 0%, #f89f4e 100%);*/
 }
 
-.heading-level-3 {
-    color: #421516;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
+
 
 .team__container {
     display: flex;
