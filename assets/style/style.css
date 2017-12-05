@@ -276,6 +276,10 @@ figure {
     border: 1px;
     border-radius: 10px;
 }
+.form__input:focus {
+    box-shadow: 0 0 0 2px #9B3F3F;
+    outline: 0;
+}
 .form__btn {
     margin-left: 20px;
     padding:10px 15px;
