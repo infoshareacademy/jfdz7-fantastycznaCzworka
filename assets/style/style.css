@@ -288,6 +288,7 @@ figure {
     border-radius: 10px;
     color: #ffffff;
 }
+.form__text {text-align: left;}
 /*Section: information about the team*/
 #information-about-the-team {
     width: 100%;
