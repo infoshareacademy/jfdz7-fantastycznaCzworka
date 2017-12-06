@@ -24,8 +24,8 @@
                 <a href="#main"><img class="logo" src="assets/photo/LogoGŻ.png"></a>
             </figure>
             <ul class="menu-nav__list">
-                <li class="menu-nav__list-item"><a href="#form">Zapis na premierę</a></li>
                 <li class="menu-nav__list-item"><a href="#functions">Funkcje</a></li>
+                <li class="menu-nav__list-item"><a href="#form">Zapis na premierę</a></li>
                 <li class="menu-nav__list-item"><a href="#about-team">Zespół</a></li>
             </ul>
 
@@ -38,7 +38,6 @@
                     wysyłanie życzeń do swoich znajomych na Facebooku. Rozległa baza powoduje, że ta sama osoba nigdy nie
                     dostanie jednakowych życzeń!
                 </p>
-                <button class="btn"><a class="description__link" href="#">Wkrótce zapis na premierę</a></button>
             </div>
         </section>
     </header>
@@ -78,15 +77,17 @@
                 </div>
             </div>
 
-        </section>
-        <section> <!-- Fromularz poniej-->
-            <div class="container">
-
-            </div>
-        </section>
-    <section> <!-- Fromularz poniej-->
+    </section>
+        <div id="form" class="anchor"></div>
+    <section class="section-form"> <!-- Fromularz poniej-->
         <div class="container">
-
+            <h2 class="heading">Już nie możesz doczekać się premiery produktu ? Wystarczy wypełnić poniższy formularz.</h2>
+            <form class="premiere-form" action="https://formspree.io/fantastyczna4ka.isa@gmail.com" method="POST">
+                <input class="form__input" type="text" name="Imię" autofocus placeholder="imię - opcjonalnie">
+                <input class="form__input" type="e-mail" name="e-mail" required placeholder="e-mail - pole wymagane">
+                <button class="btn form__btn" type="submit">Powiadom mnie o premierze</button>
+            </form>
+            <p class="form__text">Na Twoją skrzynkę przyjdzie tylko jedna wiadomość. Możesz byc pewnien, że nie udostępnimy Twojego adresu e-mail osobom trzecim</p>
         </div>
     </section>
         <div id="about-team" class="anchor"></div>
