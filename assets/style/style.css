@@ -41,24 +41,26 @@ button {
         bottom: 40px;
     }
 }
-
 .logo {
     width: 100px;
     display: none;
+    transition: all ease .5s;
 }
 
 nav figure {
     float: left;
 }
 
-.menu-on .hamburger{
+.menu-on .hamburger {
     position: fixed;
     top: 20px;
     right: 20px;
     z-index: 1002;
     padding: 15px;
+    cursor: pointer;
 }
-.hamburger{
+
+.hamburger {
     width: 50px;
 }
 
@@ -74,12 +76,39 @@ nav figure {
 }
 
 nav.primary-nav {
-    background-color: rgba(48, 23, 27, 0.4);
     z-index: 1001;
     display: none;
     width: 100%;
     position: fixed;
     overflow: hidden;
+    background: linear-gradient(to bottom, rgba(48, 23, 27, 0.76) 0%, rgba(48, 23, 27, 0.76) 1%, rgba(24, 11, 13, 0.54) 51%, rgba(0, 0, 0, 0) 99%);
+    transition: all ease .6s;
+}
+
+nav.primary-nav.shrink {
+    height: 60px;
+    background-color: rgba(48, 23, 27, 0.54);
+    transition: all ease .5s;
+}
+
+nav.shrink a {
+    padding: 0;
+    transition: all ease .5s;
+}
+
+nav.shrink img {
+    width: 60px;
+    transition: all ease .5s;
+}
+
+nav.opacity {
+    transition: all ease 1s;
+    opacity: 0.5;
+}
+
+nav.opacity:hover {
+    transition: all ease 1s;
+    opacity: 1;
 }
 
 .menu-nav__list {
@@ -91,6 +120,7 @@ nav.primary-nav {
 .menu-nav__list-item {
     margin: 0 15px;
     float: none;
+
 }
 
 .menu-nav__list-item a {
@@ -104,7 +134,8 @@ nav.primary-nav {
     font-size: 1.25em;
     letter-spacing: 2px;
     font-weight: 700;
-
+    width: 70%;
+    text-align: center;
 }
 
 .menu-nav__list-item a:after {
