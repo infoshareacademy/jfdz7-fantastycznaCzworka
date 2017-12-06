@@ -8,7 +8,6 @@ body {
     margin: 0;
     background-color: #f78723;
     color: #ffffff;
-    /*font-family: Origin, sans-serif;*/
     font-family: 'Lato', sans-serif;
 }
 
@@ -41,6 +40,7 @@ button {
         bottom: 40px;
     }
 }
+
 .logo {
     width: 100px;
     display: none;
@@ -81,34 +81,8 @@ nav.primary-nav {
     width: 100%;
     position: fixed;
     overflow: hidden;
-    background: linear-gradient(to bottom, rgba(48, 23, 27, 0.76) 0%, rgba(48, 23, 27, 0.76) 1%, rgba(24, 11, 13, 0.54) 51%, rgba(0, 0, 0, 0) 99%);
+    background: linear-gradient(to bottom, rgba(48, 23, 27, 0.76) 0%, rgba(48, 23, 27, 0.76) 1%, rgba(24, 11, 13, 0.54) 71%, rgba(0, 0, 0, 0) 99%);
     transition: all ease .6s;
-}
-
-nav.primary-nav.shrink {
-    height: 60px;
-    background-color: rgba(48, 23, 27, 0.54);
-    transition: all ease .5s;
-}
-
-nav.shrink a {
-    padding: 0;
-    transition: all ease .5s;
-}
-
-nav.shrink img {
-    width: 60px;
-    transition: all ease .5s;
-}
-
-nav.opacity {
-    transition: all ease 1s;
-    opacity: 0.5;
-}
-
-nav.opacity:hover {
-    transition: all ease 1s;
-    opacity: 1;
 }
 
 .menu-nav__list {
@@ -288,6 +262,12 @@ figure {
     font-size: 28px;
 }
 
+/*Additional information*/
+.heading-level-4 {
+    color: #ffffff;
+    font-size: 23px;
+}
+
 /*Section: information about the team*/
 #information-about-the-team {
     width: 100%;
@@ -433,12 +413,46 @@ footer {
         float: right;
     }
 
+    .menu-nav__list-item a {
+        width: 100%;
+    }
+
     nav.primary-nav {
         display: block;
+        background: linear-gradient(to bottom, rgba(48, 23, 27, 0.76) 0%, rgba(48, 23, 27, 0.76) 1%, rgba(24, 11, 13, 0.54) 51%, rgba(0, 0, 0, 0) 99%);
+        transition: all ease .6s;
     }
+
     .logo {
         display: inline-block;
     }
+
+    nav.primary-nav.shrink {
+        height: 60px;
+        background-color: rgba(48, 23, 27, 0.54);
+        transition: all ease .5s;
+    }
+
+    nav.shrink a {
+        padding: 0;
+        transition: all ease .5s;
+    }
+
+    nav.shrink img {
+        width: 60px;
+        transition: all ease .5s;
+    }
+
+    nav.opacity {
+        transition: all ease 1s;
+        opacity: 0.5;
+    }
+
+    nav.opacity:hover {
+        transition: all ease 1s;
+        opacity: 1;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -452,4 +466,5 @@ footer {
     .description {
         width: 50%;
     }
+
 }
