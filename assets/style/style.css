@@ -377,6 +377,52 @@ figure {
 .clear {
     clear: both;
 }
+/*Funcinality2*/
+#funcionality2 {
+    padding: 50px 0;
+    background: linear-gradient(to bottom, #CFB994 0%, #9B3F3F 5%);
+}
+.heading-level-4 {
+    color: #ffffff;
+    font-size: 23px;
+}
+.functionality-cont2 {
+    margin: 60px 40px 0px 80px;
+    display: flex;
+    flex-flow: wrap;
+}
+.funcionality__box2 {
+    display: flex;
+    flex: 0 50%;
+    margin-bottom: 8px;
+}
+.functionality__image2 {
+    height: 90px;
+    width: 90px;
+}
+.funcionality__box2 figure{
+    display: block;
+}
+.funcionality__box2 h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f2f2f2;
+}
+.func {
+    margin-top: 0px;
+    margin-left: -50px;
+}
+.func li i{
+    padding-right: 10px;
+}
+
+.func li {
+    list-style: none;
+    padding: 5px 0 5px 23px;
+    font-size: 13px;
+    color: #f2f2f2;
+}
+/*end of funcionality2 swction*/
 
 .anchor {
     display: block;
@@ -493,5 +539,7 @@ footer {
     .description {
         width: 50%;
     }
-
+    .functionality-cont2 {
+        margin: 60px 50px 0px 50px;
+    }
 }
