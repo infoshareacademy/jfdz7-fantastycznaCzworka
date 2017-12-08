@@ -522,7 +522,7 @@ footer {
     }
 
     nav.opacity:hover {
-        transition: all ease 1s;
+        transition: all ease 0.5s;
         opacity: 1;
     }
 
