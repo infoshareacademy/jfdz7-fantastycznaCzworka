@@ -81,8 +81,7 @@ nav.primary-nav {
     width: 100%;
     position: fixed;
     overflow: hidden;
-    background: linear-gradient(to bottom, rgba(48, 23, 27, 0.76) 0%, rgba(48, 23, 27, 0.76) 1%, rgba(24, 11, 13, 0.54) 71%, rgba(0, 0, 0, 0) 99%);
-    transition: all ease .6s;
+    background: rgba(48, 23, 27, 0.8);
 }
 
 .menu-nav__list {
@@ -110,6 +109,7 @@ nav.primary-nav {
     font-weight: 700;
     width: 70%;
     text-align: center;
+    transition: all ease 1s;
 }
 
 .menu-nav__list-item a:after {
@@ -442,7 +442,7 @@ footer {
 
 @media screen and (max-width: 800px) /*Mobile*/ {
     h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .description {
@@ -532,6 +532,13 @@ footer {
     .description {
         width: 100%;
         top: 30%;
+    }
+    .primary-nav a{
+        font-size: 0.9em;
+        transition: all ease 1s;
+    }
+    .logo{
+        width: 80px;
     }
 }
 
