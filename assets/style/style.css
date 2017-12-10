@@ -279,26 +279,37 @@ figure {
     color: #ffffff;
     font-size: 23px;
 }
+.premiere-form {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
 
+.form__group-input {
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+   
+}
 .form__input {
-    margin-right: 10px;
+    margin: 0 10px 20px 0;
     padding: 10px;
     border: 1px;
     border-radius: 10px;
+    flex: 0 50%;
 }
 .form__input:focus {
     box-shadow: 0 0 0 2px #9B3F3F;
     outline: 0;
 }
 .form__btn {
-    margin-left: 20px;
+    margin: 0 0 20px 20px;
     padding:10px 15px;
     cursor: pointer;
     background: #9B3F3F;
     border-radius: 10px;
     color: #ffffff;
 }
-.form__text {text-align: left;}
 /*Section: information about the team*/
 #information-about-the-team {
     width: 100%;
@@ -440,22 +451,13 @@ footer {
     text-align: right;
 }
 
-@media screen and (max-width: 800px) /*Mobile*/ {
-    h1 {
-        font-size: 4em;
-    }
-
-    .description {
-        font-size: 18px;
-    }
-
-    .person {
-        flex: 0 50%;
-    }
-
-}
-
 @media screen and (min-width: 431px) {
+    .form__group-input {
+        flex-direction: row;
+    }
+.form__input {
+    flex: 100%;
+}
     .funcionality__box {
         flex: 0 50%;
     }
@@ -465,8 +467,24 @@ footer {
     }
 
 }
+@media screen and (m-width: 800px) /*Mobile*/ {
+    h1 {
+    font-size: 4em;
+}
+
+    .description {
+    font-size: 18px;
+}
+
+    .person {
+    flex: 0 50%;
+}
+
+}
+
 
 @media screen and (min-width: 877px) {
+    .form__group-input {}
     .funcionality__box {
         flex: 1;
     }
