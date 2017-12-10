@@ -63,7 +63,7 @@ nav figure {
 
 .hamburger {
     width: 50px;
-    filter: opacity(.5) drop-shadow(0 0 0 white);
+    filter: invert(100%);
 }
 
 .menu-off {
