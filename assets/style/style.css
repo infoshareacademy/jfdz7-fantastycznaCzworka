@@ -288,7 +288,6 @@ figure {
 .form__group-input {
     display: flex;
     flex-direction: column;
-    flex: 100%;
    
 }
 .form__input {
@@ -467,7 +466,7 @@ footer {
     }
 
 }
-@media screen and (m-width: 800px) /*Mobile*/ {
+@media screen and (min-width: 800px) /*Mobile*/ {
     h1 {
     font-size: 4em;
 }
@@ -484,7 +483,7 @@ footer {
 
 
 @media screen and (min-width: 877px) {
-    .form__group-input {}
+
     .funcionality__box {
         flex: 1;
     }
