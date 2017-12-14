@@ -286,7 +286,9 @@ figure {
     justify-content: center;
     flex-flow: wrap;
 }
-
+.form__heading, .form__text {
+    text-shadow: 4px 3px 7px rgb(62, 59, 59);
+}
 .form__group-input {
     display: flex;
     flex-direction: column;
