@@ -62,6 +62,7 @@ nav figure {
 
 .hamburger {
     width: 50px;
+    filter: invert(100%);
 }
 
 .menu-off {
@@ -70,7 +71,6 @@ nav figure {
     top: 0;
     right: 0;
     bottom: 0;
-    /*background-color: rgba(0, 0, 0, .4);*/
     z-index: 1000;
     display: none;
 }
@@ -81,8 +81,7 @@ nav.primary-nav {
     width: 100%;
     position: fixed;
     overflow: hidden;
-    background: linear-gradient(to bottom, rgba(48, 23, 27, 0.76) 0%, rgba(48, 23, 27, 0.76) 1%, rgba(24, 11, 13, 0.54) 71%, rgba(0, 0, 0, 0) 99%);
-    transition: all ease .6s;
+    background: rgba(48, 23, 27, 0.8);
 }
 
 .menu-nav__list {
@@ -110,6 +109,7 @@ nav.primary-nav {
     font-weight: 700;
     width: 70%;
     text-align: center;
+    transition: all ease 1s;
 }
 
 .menu-nav__list-item a:after {
@@ -288,7 +288,7 @@ figure {
 .form__group-input {
     display: flex;
     flex-direction: column;
-   
+
 }
 .form__input {
     margin: 0 10px 20px 0;
@@ -390,7 +390,7 @@ figure {
 /*Funcinality2*/
 #funcionality2 {
     padding: 50px 0;
-    background: linear-gradient(to bottom, #CFB994 0%, #9B3F3F 5%);
+    background: #9B3F3F;
 }
 .heading-level-4 {
     color: #ffffff;
@@ -447,7 +447,7 @@ footer {
     background-color: #66614F;
     font-size: 20px;
     padding: 25px;
-    text-align: right;
+text-align: right;
 }
 
 @media screen and (min-width: 431px) {
@@ -519,7 +519,8 @@ footer {
 
     nav.primary-nav.shrink {
         height: 60px;
-        background-color: rgba(48, 23, 27, 0.54);
+        background: none;
+        background-color: rgba(48, 23, 27, 0.8);
         transition: all ease .5s;
     }
 
@@ -539,7 +540,7 @@ footer {
     }
 
     nav.opacity:hover {
-        transition: all ease 1s;
+        transition: all ease 0.5s;
         opacity: 1;
     }
 
@@ -549,6 +550,13 @@ footer {
     .description {
         width: 100%;
         top: 30%;
+    }
+    .primary-nav a{
+        font-size: 0.9em;
+        transition: all ease 1s;
+    }
+    .logo{
+        width: 80px;
     }
 }
 
