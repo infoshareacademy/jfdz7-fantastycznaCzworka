@@ -271,7 +271,9 @@ figure {
 }
 .section-form {
     padding: 50px 0;
-    background: #C69E68;
+    /*background: #C69E68;*/
+    background: url("../photo/letters-2742643_1920.jpg") no-repeat center center;
+    background-attachment: fixed;
 }
 
 /*Additional information*/
