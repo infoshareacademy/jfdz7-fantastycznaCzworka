@@ -271,9 +271,9 @@ figure {
 }
 .section-form {
     padding: 50px 0;
-    /*background: #C69E68;*/
     background: url("../photo/letters-2742643_1920.jpg") no-repeat center center;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 /*Additional information*/
@@ -313,6 +313,9 @@ figure {
     background: #9B3F3F;
     border-radius: 10px;
     color: #ffffff;
+}
+.form__btn:hover {
+    opacity: 0.7;
 }
 /*Section: information about the team*/
 #information-about-the-team {
