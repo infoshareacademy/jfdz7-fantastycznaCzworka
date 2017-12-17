@@ -168,10 +168,13 @@ nav.primary-nav {
     position: absolute;
     right: 0;
     top: 30%;
+    text-shadow: 2px 2px 2px black;
+
 }
 
 .description__text {
     margin-bottom: 20px;
+
 }
 
 p {
