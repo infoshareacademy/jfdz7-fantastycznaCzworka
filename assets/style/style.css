@@ -399,7 +399,7 @@ figure {
 }
 .heading-level-4 {
     color: #ffffff;
-    font-size: 23px;
+    font-size: 28px;
 }
 .functionality-cont2 {
     margin: 60px 40px 0px 80px;
@@ -414,6 +414,9 @@ figure {
 .functionality__image2 {
     height: 90px;
     width: 90px;
+}
+.img_flex {
+    align-items: left;
 }
 .funcionality__box2 figure{
     display: block;
@@ -434,7 +437,7 @@ figure {
 .func li {
     list-style: none;
     padding: 5px 0 5px 23px;
-    font-size: 13px;
+    font-size: 15px;
     color: #f2f2f2;
 }
 /*end of funcionality2 swction*/
