@@ -6,7 +6,7 @@ html, body {
 
 body {
     margin: 0;
-    background-color: #f78723;
+    background-color: #9b3f40;
     color: #ffffff;
     font-family: 'Lato', sans-serif;
 }
@@ -168,10 +168,13 @@ nav.primary-nav {
     position: absolute;
     right: 0;
     top: 30%;
+    text-shadow: 2px 2px 2px black;
+
 }
 
 .description__text {
     margin-bottom: 20px;
+
 }
 
 p {
