@@ -6,7 +6,7 @@ html, body {
 
 body {
     margin: 0;
-    background-color: #f78723;
+    background-color: #9b3f40;
     color: #ffffff;
     font-family: 'Lato', sans-serif;
 }
@@ -161,24 +161,26 @@ nav.primary-nav {
 .description {
     margin: 0;
     color: white;
-    background: rgba(0, 0, 0, 0.5);
     font-size: 1.3em;
     font-family: bold Origin, sans-serif;
     padding: 25px 0;
     position: absolute;
     right: 0;
     top: 30%;
+    text-shadow: 2px 2px 2px black;
+
 }
 
 .description__text {
-    margin-bottom: 20px;
+    background: rgba(113, 43, 40, 0.7);
+    width: 80%;
+    margin: 0 auto;
 }
 
 p {
-    padding: 10px;
+    padding: 12px;
     color: white;
     text-align: center;
-    margin: 0;
 
 }
 
