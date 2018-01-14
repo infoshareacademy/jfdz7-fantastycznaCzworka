@@ -235,7 +235,7 @@ figure {
     text-align: center;
 }
 
-#funcionality {
+.funcionality {
     padding: 50px 0;
     background-color: #9B3F3F;
 }
@@ -323,10 +323,7 @@ figure {
 #information-about-the-team {
     width: 100%;
     background: #CFB994;
-    /*!*background: linear-gradient(to bottom, #dfdce3 0%, #bac5db 100%);*!*/
-    /*background: linear-gradient(to bottom, #dfdce3 0%, #bac5db 100%);*/
     padding: 30px 0px;
-    /*background: linear-gradient(to bottom, #f78723 0%, #f89f4e 100%);*/
 }
 
 
@@ -341,15 +338,13 @@ figure {
     padding-top: 1px;
     font-size: 22px;
     color: #2C1212;
-    /*color: #000565;*/
-    /*color: #1C4089;*/
     text-align: center;
     margin: 0px 0px 6px;
     letter-spacing: 1px;
     word-spacing: 4px;
     font-weight: 700;
     font-family: Origin, sans-serif;
-    /*text-transform: uppercase;*/
+
 }
 
 .contact-person {
@@ -363,7 +358,6 @@ figure {
     text-align: center;
 }
 
-/*photo*/
 .photo {
     width: 200px;
     background: rgba(44, 18, 18, 0.2);
@@ -379,9 +373,6 @@ figure {
     text-align: center;
 }
 
-/*.photo-sephi {*/
-/*filter: grayscale(100%);*/
-/*}*/
 .photo img {
     flex-basis: 100%;
     width: 100%;
@@ -398,7 +389,7 @@ figure {
     clear: both;
 }
 /*Funcinality2*/
-#funcionality2 {
+.funcionality2 {
     padding: 50px 0;
     background: #9B3F3F;
 }
@@ -415,10 +406,12 @@ figure {
     display: flex;
     flex: 0 50%;
     margin-bottom: 8px;
+
 }
 .functionality__image2 {
     height: 90px;
     width: 90px;
+
 }
 .img_flex {
     align-items: left;
@@ -461,6 +454,12 @@ footer {
     font-size: 20px;
     padding: 25px;
 text-align: right;
+}
+/*animations*/
+
+.rotate{
+    transform: rotate(360deg);
+    transition: ease-in 0.4s;
 }
 
 @media screen and (min-width: 576px) {
