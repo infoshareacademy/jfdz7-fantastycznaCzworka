@@ -571,6 +571,7 @@
 
 .fadeIn {
   animation-name: fadeIn;
+
 }
 
 @keyframes fadeInDown {
@@ -651,6 +652,7 @@
 
 .fadeInRight {
   animation-name: fadeInRight;
+  animation-duration: 0.8s;
 }
 
 @keyframes fadeInRightBig {
@@ -1297,6 +1299,7 @@
 
 .zoomIn {
   animation-name: zoomIn;
+  animation-duration: 1s;
 }
 
 @keyframes zoomInDown {
