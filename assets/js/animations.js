@@ -1,12 +1,12 @@
-const $functionalityBoxes = $('.functionality__image, .functionality__image2');
+const $sectionFunctions = $("#functions_2");
+const $sectionFuncOffset = $sectionFunctions.offset().top;
 
-const $functionsOneOffset = $('#functions').offset().top;
-const $functionsTwoOffset = $('#functions2').offset().top;
-const $formOffset = $('#form').offset().top;
-const $abouTeamOffset = $('#about-team').offset().top;
+function animateSecondFunctions() {
+    let windowBottomEdge = $(window).scrollTop() + $(window).height();
 
-function rotateElement() {
-    $(this).addClass('rotate');
+    if (windowBottomEdge > $sectionFuncOffset) {
+        $sectionFunctions.addClass('fadeInUp');
+    }
 }
+$(window).on('scroll', animateSecondFunctions);
 
-$functionalityBoxes.on('click', rotateElement);
