@@ -3,7 +3,6 @@ const $sectionFuncOffset = $sectionFunctions.offset().top;
 const $AboutTeamPhotos = $(".photo");
 const $aboutTeamOffset = $AboutTeamPhotos.offset().top;
 const $startSection = $('#banner');
-const $startSectionOffset = $startSection.offset().top;
 
 function animateSecondFunctions() {
     let windowBottomEdge = $(window).scrollTop() + $(window).height();
@@ -25,12 +24,11 @@ function animateTeamPhotos() {
 
 $(window).on('scroll', animateTeamPhotos);
 
-function animateStart() {
-    let windowBottomEdge = $(window).scrollTop() + $(window).height();
+$(document).ready(function () {
+    $startSection.addClass('fadeInRight');
+});
 
-    if (windowBottomEdge > $startSectionOffset) {
-        $startSection.addClass('fadeInRight');
-    }
-}
+$(document).ready(function () {
+    $startSection.addClass('fadeInRight')
+});
 
-$(window).on('scroll', animateStart());
