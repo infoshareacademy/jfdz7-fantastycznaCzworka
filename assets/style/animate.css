@@ -588,6 +588,7 @@
 
 .fadeInDown {
   animation-name: fadeInDown;
+  z-index: -1;
 }
 
 @keyframes fadeInDownBig {

@@ -8,7 +8,7 @@ function animateSecondFunctions() {
     let windowBottomEdge = $(window).scrollTop() + $(window).height();
 
     if (windowBottomEdge > $sectionFuncOffset) {
-        $sectionFunctions.addClass('fadeInUp');
+        $sectionFunctions.addClass('slideInLeft');
     }
 }
 
@@ -28,7 +28,4 @@ $(document).ready(function () {
     $startSection.addClass('fadeInRight');
 });
 
-$(document).ready(function () {
-    $startSection.addClass('fadeInRight')
-});
 
