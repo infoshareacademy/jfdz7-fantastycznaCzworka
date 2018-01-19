@@ -443,6 +443,7 @@ figure {
     font-weight: 900;
     text-transform: uppercase;
     color: #f2f2f2;
+    margin-bottom: 10px;
 }
 
 .func {
@@ -456,7 +457,7 @@ figure {
 
 .func li {
     list-style: none;
-    padding: 5px 0 5px 23px;
+    padding: 0px 0px 4px 8px;
     font-size: 15px;
     color: #f2f2f2;
 }
@@ -561,7 +562,7 @@ footer {
     }
 
     .functionality-cont2 {
-        margin: 0px 100px 0px 100px;
+        margin: 0px 100px 0px 180px;
     }
 }
 
