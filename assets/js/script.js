@@ -1,7 +1,7 @@
 (function() {
 
 
-    var button = document.querySelector(".scroll-top");
+    let button = document.querySelector(".scroll-top");
 
     function animateScroll() {
 
@@ -29,6 +29,12 @@
         }
 
     }, false);
+
+    let $anchorLinks = $('.menu-nav__list').find('a[href^="#"]');
+    function getTextFromAnchor(){
+        document.title = $(this).text();
+    }
+    $anchorLinks.on('click', getTextFromAnchor);
 
 
 })();
