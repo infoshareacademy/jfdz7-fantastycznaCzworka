@@ -91,7 +91,11 @@
                     <input class="form__input" type="text" name="Imię" placeholder="imię - opcjonalnie">
                     <input class="form__input" type="email" name="e-mail" required placeholder="e-mail - pole wymagane">
                 </div>
-                <button class="btn form__btn" type="submit">Powiadom mnie o premierze</button>
+                <button class="btn form__btn antybot_btn" disabled type="submit">Powiadom mnie o premierze</button>
+                <span>Potwierdź, że jesteś człowiekiem - wpisz wynik dzaiłania: </span>
+                <span class="code_antybot"></span>
+
+                <input class="input_antybot">
             </form>
             <p class="form__text">Na Twoją skrzynkę przyjdzie tylko jedna wiadomość. Możesz byc pewnien, że nie
                 udostępnimy Twojego adresu e-mail osobom trzecim</p>
@@ -251,5 +255,6 @@
 <script src="assets/js/animations.js"></script>
 <script src="assets/js/navbar.js"></script>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/antybot.js"></script>
 </body>
 </html>
