@@ -140,25 +140,11 @@ ol {
     display: table;
 }
 
-.mobile-menu-bar {
-    display: block;
-    overflow: auto;
-    visibility: visible;
-}
-
-.menu-nav__list {
-    list-style-type: none;
-    margin: 0 0 0 auto;
-    padding: 20px;
-}
-
-.menu-nav__list-item {
-    margin: 0 15px;
-    float: none;
+.
 
 }
 
-.menu-nav__list-item a:after {
+.menu_a:after {
     position: absolute;
     content: "";
     left: 0;
