@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Generator życzeń</title>
@@ -15,24 +15,47 @@
 <body>
 
 <header id="main" class="banner">
-        <input id="toggle-menu" type="checkbox"/>
 
-        <label for="toggle-menu" class="menu-on">
-            <img class="hamburger" src="assets/photo/menu.svg"></label>
-        <label for="toggle-menu" class="menu-off"></label>
-    <nav class="primary-nav">
-        <div class="clear"></div>
+    <nav class="menu_open navbar_nav">
         <figure>
-            <a href="#main"><img class="logo" src="assets/photo/logogz.svg"></a>
+        <img class="mobile-logo" src="assets/photo/logogz.svg">
+        <img id="menu-acces" class="hamburger" src="assets/photo/menu.svg">
         </figure>
-        <ul class="menu-nav__list">
-            <li class="menu-nav__list-item"><a href="#functions">Funkcje</a></li>
-            <li class="menu-nav__list-item"><a href="#form">Zapisz się na premierę</a></li>
-            <li class="menu-nav__list-item"><a href="#functions2">Szczegóły</a></li>
-            <li class="menu-nav__list-item"><a href="#about-team">Zespół</a></li>
-        </ul>
 
+        <ul class="menu_open navbar_ul">
+            <figure><img class="logo" src="assets/photo/logogz.svg"></figure>
+            <li class="menu_li menu-nav__list-item">
+                <a class="menu_a" href="#functions">Funkcje</a>
+            </li>
+            <li class="menu_li menu-nav__list-item">
+                <a class="menu_a" href="#form">Zapisz się na premierę</a>
+            </li>
+            <li class="menu_li menu-nav__list-item">
+                <a class="menu_a" href="#functions2">Szczegóły</a>
+            </li>
+            <li class="menu_li menu-nav__list-item">
+                <a class="menu_a" href="#about-team">Zespół</a>
+            </li>
+        </ul>
     </nav>
+        <!--<input id="toggle-menu" type="checkbox"/>-->
+
+        <!--<label for="toggle-menu" class="menu-on">-->
+            <!--<img class="hamburger" src="assets/photo/menu.svg"></label>-->
+        <!--<label for="toggle-menu" class="menu-off"></label>-->
+    <!--<nav class="primary-nav">-->
+        <!--<div class="clear"></div>-->
+        <!--<figure>-->
+            <!--<a href="#main"><img class="logo" src="assets/photo/logogz.svg"></a>-->
+        <!--</figure>-->
+        <!--<ul class="menu-nav__list">-->
+            <!--<li class="menu-nav__list-item"><a href="#functions">Funkcje</a></li>-->
+            <!--<li class="menu-nav__list-item"><a href="#form">Zapisz się na premierę</a></li>-->
+            <!--<li class="menu-nav__list-item"><a href="#functions2">Szczegóły</a></li>-->
+            <!--<li class="menu-nav__list-item"><a href="#about-team">Zespół</a></li>-->
+        <!--</ul>-->
+
+    <!--</nav>-->
 
     <section class="description text--center animated" id="banner"> <!-- krotki opis  i tytul-->
         <div class="container">
