@@ -124,7 +124,7 @@ ol {
 }
 
 .menu_li:hover, .menu_a:hover {
-    background-color: #03A9F4;
+    /*background-color: #03A9F4;*/
     opacity: 1;
 }
 
@@ -140,11 +140,11 @@ ol {
     display: table;
 }
 
-.
-
+a.menu_a:hover:after {
+    width: 100%;
 }
 
-.menu_a:after {
+a.menu_a:after {
     position: absolute;
     content: "";
     left: 0;
