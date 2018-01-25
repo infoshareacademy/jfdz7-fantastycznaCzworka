@@ -1,5 +1,11 @@
 @import "normalize.css";
 
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
 html, body {
     height: 100%;
 }
@@ -47,12 +53,6 @@ button {
     transition: all ease .5s;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
 a {
     text-decoration: none;
     color: #FFFFFF;
@@ -88,7 +88,7 @@ ol {
     float: left;
 }
 
-.mobile-logo{
+.mobile-logo {
     display: none;
     width: 60px;
     float: left;
@@ -112,7 +112,7 @@ ol {
 
 .menu_li {
     width: 20%;
-    float: left;
+    float: right;
     text-align: center;
     height: 50px;
     background: rgb(48, 23, 27);
@@ -140,11 +140,25 @@ ol {
     display: table;
 }
 
-a.menu_a:hover:after {
+.menu-nav__list-item a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-align: center;
+    transition: all ease 1s;
+}
+
+.menu-nav__list-item a:hover:after {
     width: 100%;
 }
 
-a.menu_a:after {
+.menu-nav__list-item a:after {
     position: absolute;
     content: "";
     left: 0;
@@ -605,7 +619,8 @@ footer {
     .logo {
         display: none;
     }
-    .mobile-logo{
+
+    .mobile-logo {
         display: block;
         width: 75px;
     }
