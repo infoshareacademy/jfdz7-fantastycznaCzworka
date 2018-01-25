@@ -74,6 +74,12 @@ nav figure {
     z-index: 1000;
     display: none;
 }
+.mobile-menu-bar {
+    display: block;
+    background-color: blue;
+    overflow: auto;
+    visibility: visible;
+}
 
 nav.primary-nav {
     z-index: 1001;
@@ -160,12 +166,12 @@ nav.primary-nav {
 .description {
     margin: 0;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-family: bold Origin, sans-serif;
     padding: 25px 0;
     position: absolute;
     right: 0;
-    top: 20%;
+    top: 25%;
     text-shadow: 2px 2px 2px black;
 
 }
@@ -202,7 +208,7 @@ p {
 
 h1 {
     color: white;
-    font: 3em Lobster, Sans-Serif;
+    font: 2.6em Lobster, Sans-Serif;
     letter-spacing: 10px;
     padding: 10px;
     margin-top: 0;
@@ -494,6 +500,9 @@ footer {
     .funcionality__box2 {
         flex: 0 100%;
     }
+    h1 {
+        font-size: 2.7em;
+    }
 
 }
 
@@ -532,6 +541,9 @@ footer {
     .img_flex {
         align-items: center;
     }
+    .description{
+        top: 25%;
+    }
 }
 
 @media screen and (min-width: 768px) /*Mobile*/ {
@@ -540,7 +552,7 @@ footer {
     }
 
     .description {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .form__group-input {
@@ -588,6 +600,9 @@ footer {
 
     .menu-nav__list-item a {
         width: 100%;
+    }
+    .mobile-menu-bar{
+        display: none;
     }
 
     nav.primary-nav {
@@ -640,7 +655,7 @@ footer {
 @media screen and (max-width: 1200px) {
     .description {
         width: 100%;
-        top: 20%;
+        top: 15%;
     }
 
     .primary-nav a {
