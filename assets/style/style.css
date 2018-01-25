@@ -123,14 +123,9 @@ ol {
     padding: 16px 0;
 }
 
-.menu_li:hover, .menu_a:hover {
-    /*background-color: #03A9F4;*/
-    opacity: 1;
-}
 
 #menu-acces {
     display: none;
-    /*width: 100%;*/
     position: relative;
     text-align: center;
 }
