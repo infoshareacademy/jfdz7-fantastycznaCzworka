@@ -111,7 +111,7 @@ ol {
 }
 
 .menu_li {
-    width: 15%;
+    width: 18%;
     float: right;
     text-align: center;
     height: 50px;
@@ -135,11 +135,11 @@ ol {
 
 .menu-nav__list-item a {
     color: white;
-    margin: 0 15px;
+    margin: 15px 0;
     text-decoration: none;
     position: relative;
     display: block;
-    padding: 0;
+    padding: 0 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
@@ -163,7 +163,7 @@ ol {
 }
 
 nav.navbar_nav.shrink {
-    height: 60px;
+    height: 50px;
     background: none;
     background-color: rgba(48, 23, 27, 0.8);
     transition: all ease .5s;
@@ -171,10 +171,11 @@ nav.navbar_nav.shrink {
 
 nav.shrink a {
     transition: all ease .5s;
+    margin: 0;
 }
 
 nav.shrink.logo {
-    width: 60px;
+    width: 50px;
     transition: all ease .5s;
 }
 
@@ -538,6 +539,10 @@ footer {
     h1 {
         font-size: 2.7em;
     }
+    .description {
+        width: 100%;
+        top: 15%;
+    }
 
 }
 
@@ -632,8 +637,7 @@ footer {
 @media screen and (max-width: 1200px) {
     .description {
         width: 100%;
-        top: 15%;
-    }
+         }
 
 
     nav.navbar_nav.shrink {
