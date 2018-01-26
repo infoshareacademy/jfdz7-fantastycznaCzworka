@@ -84,7 +84,7 @@ ol {
 }
 
 .logo {
-    width: 60px;
+    width: 50px;
     float: left;
 }
 
@@ -111,11 +111,10 @@ ol {
 }
 
 .menu_li {
-    width: 18%;
     float: right;
     text-align: center;
     height: 50px;
-
+    padding-right: 15px;
 }
 
 .menu_a {
@@ -175,7 +174,7 @@ nav.shrink a {
 }
 
 nav.shrink.logo {
-    width: 50px;
+    width: 45px;
     transition: all ease .5s;
 }
 
