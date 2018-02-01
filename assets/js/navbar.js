@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $(window).scroll(function() {
-        if($(document).scrollTop() > 250) {
+        if($(document).scrollTop() > 700) {
             $('nav').addClass('opacity');
 
         }

@@ -6,7 +6,7 @@ html, body {
 
 body {
     margin: 0;
-    background-color: #f78723;
+    background-color: #9b3f40;
     color: #ffffff;
     font-family: 'Lato', sans-serif;
 }
@@ -55,13 +55,14 @@ nav figure {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 1002;
+    z-index: 1003;
     padding: 15px;
     cursor: pointer;
 }
 
 .hamburger {
     width: 50px;
+    filter: invert(100%);
 }
 
 .menu-off {
@@ -70,7 +71,6 @@ nav figure {
     top: 0;
     right: 0;
     bottom: 0;
-    /*background-color: rgba(0, 0, 0, .4);*/
     z-index: 1000;
     display: none;
 }
@@ -81,8 +81,7 @@ nav.primary-nav {
     width: 100%;
     position: fixed;
     overflow: hidden;
-    background: linear-gradient(to bottom, rgba(48, 23, 27, 0.76) 0%, rgba(48, 23, 27, 0.76) 1%, rgba(24, 11, 13, 0.54) 71%, rgba(0, 0, 0, 0) 99%);
-    transition: all ease .6s;
+    background: rgba(48, 23, 27, 0.8);
 }
 
 .menu-nav__list {
@@ -110,6 +109,7 @@ nav.primary-nav {
     font-weight: 700;
     width: 70%;
     text-align: center;
+    transition: all ease 1s;
 }
 
 .menu-nav__list-item a:after {
@@ -126,7 +126,6 @@ nav.primary-nav {
 .menu-nav__list-item a:hover:after {
     width: 100%;
 }
-
 
 #toggle-menu:checked ~ .menu-on {
     display: block;
@@ -161,24 +160,26 @@ nav.primary-nav {
 .description {
     margin: 0;
     color: white;
-    background: rgba(0, 0, 0, 0.5);
     font-size: 1.3em;
     font-family: bold Origin, sans-serif;
     padding: 25px 0;
     position: absolute;
     right: 0;
-    top: 30%;
+    top: 20%;
+    text-shadow: 2px 2px 2px black;
+
 }
 
 .description__text {
-    margin-bottom: 20px;
+    background: rgba(113, 43, 40, 0.7);
+    width: 80%;
+    margin: 0 auto;
 }
 
 p {
-    padding: 10px;
+    padding: 12px;
     color: white;
     text-align: center;
-    margin: 0;
 
 }
 
@@ -201,7 +202,7 @@ p {
 
 h1 {
     color: white;
-    font: 4em Lobster, Sans-Serif;
+    font: 3em Lobster, Sans-Serif;
     letter-spacing: 10px;
     padding: 10px;
     margin-top: 0;
@@ -233,7 +234,7 @@ figure {
     text-align: center;
 }
 
-#funcionality {
+.funcionality {
     padding: 50px 0;
     background-color: #9B3F3F;
 }
@@ -256,6 +257,7 @@ figure {
     height: 128px;
     width: 128px;
 }
+
 .heading {
 
     font-size: 28px;
@@ -265,13 +267,17 @@ figure {
     color: #ffffff;
 
 }
+
 .heading-level-3 {
     color: #421516;
     margin-bottom: 20px;
 }
+
 .section-form {
     padding: 50px 0;
-    background: #C69E68;
+    background: url("../photo/letters-2742643_1920.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /*Additional information*/
@@ -280,36 +286,55 @@ figure {
     font-size: 23px;
 }
 
+.premiere-form {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.form__heading, .form__text {
+    text-shadow: 4px 3px 7px rgb(62, 59, 59);
+}
+
+.form__group-input {
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+
+}
+
 .form__input {
-    margin-right: 10px;
+    margin: 0 10px 20px 0;
     padding: 10px;
     border: 1px;
     border-radius: 10px;
+    flex: 0 50%;
 }
+
 .form__input:focus {
     box-shadow: 0 0 0 2px #9B3F3F;
     outline: 0;
 }
+
 .form__btn {
-    margin-left: 20px;
-    padding:10px 15px;
+    margin: 0 0 20px 20px;
+    padding: 10px 15px;
     cursor: pointer;
     background: #9B3F3F;
     border-radius: 10px;
     color: #ffffff;
 }
-.form__text {text-align: left;}
+
+.form__btn:hover {
+    opacity: 0.7;
+}
+
 /*Section: information about the team*/
 #information-about-the-team {
     width: 100%;
     background: #CFB994;
-    /*!*background: linear-gradient(to bottom, #dfdce3 0%, #bac5db 100%);*!*/
-    /*background: linear-gradient(to bottom, #dfdce3 0%, #bac5db 100%);*/
-    padding: 30px 0px;
-    /*background: linear-gradient(to bottom, #f78723 0%, #f89f4e 100%);*/
+    padding: 30px 0;
 }
-
-
 
 .team__container {
     display: flex;
@@ -321,15 +346,13 @@ figure {
     padding-top: 1px;
     font-size: 22px;
     color: #2C1212;
-    /*color: #000565;*/
-    /*color: #1C4089;*/
     text-align: center;
     margin: 0px 0px 6px;
     letter-spacing: 1px;
     word-spacing: 4px;
     font-weight: 700;
     font-family: Origin, sans-serif;
-    /*text-transform: uppercase;*/
+
 }
 
 .contact-person {
@@ -343,7 +366,6 @@ figure {
     text-align: center;
 }
 
-/*photo*/
 .photo {
     width: 200px;
     background: rgba(44, 18, 18, 0.2);
@@ -359,9 +381,6 @@ figure {
     text-align: center;
 }
 
-/*.photo-sephi {*/
-/*filter: grayscale(100%);*/
-/*}*/
 .photo img {
     flex-basis: 100%;
     width: 100%;
@@ -377,6 +396,73 @@ figure {
 .clear {
     clear: both;
 }
+
+/*Funcinality2*/
+#functions2 {
+    z-index: 1001;
+}
+
+.funcionality2 {
+    padding: 50px 0;
+    background: #9B3F3F;
+}
+
+.heading-level-4 {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.functionality-cont2 {
+    margin: 60px 40px 0px 80px;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.funcionality__box2 {
+    display: flex;
+    flex: 0 50%;
+    margin-bottom: 8px;
+
+}
+
+.functionality__image2 {
+    height: 90px;
+    width: 90px;
+
+}
+
+.img_flex {
+    align-items: left;
+}
+
+.funcionality__box2 figure {
+    display: block;
+}
+
+.funcionality__box2 h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    margin-bottom: 10px;
+}
+
+.func {
+    margin-top: 0px;
+    margin-left: -50px;
+}
+
+.func li i {
+    padding-right: 10px;
+}
+
+.func li {
+    list-style: none;
+    padding: 0px 0px 4px 8px;
+    font-size: 15px;
+    color: #f2f2f2;
+}
+
+/*end of funcionality2 swction*/
 
 .anchor {
     display: block;
@@ -394,22 +480,33 @@ footer {
     text-align: right;
 }
 
-@media screen and (max-width: 800px) /*Mobile*/ {
-    h1 {
-        font-size: 4em;
+@media screen and (max-width: 576px) {
+    .functionality__image2 {
+        height: 70px;
+        width: 70px;
     }
 
-    .description {
-        font-size: 18px;
+    .functionality-cont2 {
+        margin: 0px 0px 0px 0px;
+        display: flex;
+        flex-flow: wrap;
     }
 
-    .person {
-        flex: 0 50%;
+    .funcionality__box2 {
+        flex: 0 100%;
     }
 
 }
 
-@media screen and (min-width: 431px) {
+@media screen and (min-width: 576px) {
+    .form__group-input {
+        flex-direction: row;
+    }
+
+    .form__input {
+        flex: 100%;
+    }
+
     .funcionality__box {
         flex: 0 50%;
     }
@@ -418,9 +515,59 @@ footer {
         flex: 0 50%;
     }
 
+    .functionality-cont2 {
+        margin: 0px 0px 0px 0px;
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .func {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .funcionality__box2 {
+        flex: 0 100%;
+    }
+
+    .img_flex {
+        align-items: center;
+    }
 }
 
-@media screen and (min-width: 877px) {
+@media screen and (min-width: 768px) /*Mobile*/ {
+    h1 {
+        font-size: 4em;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .form__group-input {
+        flex: 0;
+    }
+
+    .person {
+        flex: 0 50%;
+    }
+
+    .funcionality__box2 {
+        flex: 0 100%;
+
+    }
+
+    .img_flex {
+        align-items: center;
+    }
+
+    .functionality-cont2 {
+        margin: 0px 100px 0px 180px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
     .funcionality__box {
         flex: 1;
     }
@@ -456,7 +603,8 @@ footer {
 
     nav.primary-nav.shrink {
         height: 60px;
-        background-color: rgba(48, 23, 27, 0.54);
+        background: none;
+        background-color: rgba(48, 23, 27, 0.8);
         transition: all ease .5s;
     }
 
@@ -476,8 +624,16 @@ footer {
     }
 
     nav.opacity:hover {
-        transition: all ease 1s;
+        transition: all ease 0.5s;
         opacity: 1;
+    }
+
+    .funcionality__box2 {
+        flex: 0 100%;
+    }
+
+    .functionality-cont2 {
+        margin: 0px 250px 0px 250px;
     }
 
 }
@@ -485,7 +641,16 @@ footer {
 @media screen and (max-width: 1200px) {
     .description {
         width: 100%;
-        top: 30%;
+        top: 20%;
+    }
+
+    .primary-nav a {
+        font-size: 0.9em;
+        transition: all ease 1s;
+    }
+
+    .logo {
+        width: 80px;
     }
 }
 
@@ -494,4 +659,11 @@ footer {
         width: 50%;
     }
 
+    .functionality-cont2 {
+        margin: 60px 50px 0px 50px;
+    }
+
+    .funcionality__box2 {
+        flex: 0 50%;
+    }
 }
