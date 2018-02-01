@@ -1,9 +1,7 @@
 body {
     background-color: #f9ebe3;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+
 }
 
 .table-cards {
@@ -36,27 +34,22 @@ body {
     backface-visibility: hidden;
     border-radius: 5px;
 }
+
 .card .front {
     background: url('../photo/logogz.svg') no-repeat;
-    background-color:  #9B3F3F;
+    background-color: #9B3F3F;
     background-size: 100%;
     background-position: center;
 }
 
 .timer {
-    margin-right: 5%;
-    width: 5%;
-    height: 50px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 38pt;
+    font-size: 30px;
 }
 
-.timer {
-    margin-right: 5%;
-    width: 5%;
-    height: 50px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 38pt;
+.div-text {
+    font-size: 30px;
+    margin: 0 1%;
 }
+
+
+
