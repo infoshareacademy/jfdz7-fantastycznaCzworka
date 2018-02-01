@@ -1,0 +1,62 @@
+body {
+    background-color: #f9ebe3;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 21%;
+    margin: 2%;
+    height: 180px;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.card div {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+.card .front {
+    background: url('../photo/logogz.svg') no-repeat;
+    background-color:  #9B3F3F;
+    background-size: 100%;
+    background-position: center;
+}
+
+.timer {
+    margin-right: 5%;
+    width: 5%;
+    height: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 38pt;
+}
+
+.timer {
+    margin-right: 5%;
+    width: 5%;
+    height: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 38pt;
+}
