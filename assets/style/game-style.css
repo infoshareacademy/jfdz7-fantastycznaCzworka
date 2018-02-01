@@ -1,6 +1,6 @@
 body {
     background-color: #f9ebe3;
-    display: flex;
+    font-family: 'Lato', sans-serif;
 
 }
 
@@ -42,14 +42,18 @@ body {
     background-position: center;
 }
 
+.timer-text {
+    font-size: 30px;
+    margin: 0 5%;
+}
+
+.time-score-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 30px;
+}
+
 .timer {
-    font-size: 30px;
+    display: flex;
 }
-
-.div-text {
-    font-size: 30px;
-    margin: 0 1%;
-}
-
-
-
