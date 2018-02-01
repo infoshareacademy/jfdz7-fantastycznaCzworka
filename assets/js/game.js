@@ -1,7 +1,7 @@
 
 $(window).ready(function() {
 
-    let timer = 5;
+    let timer = 60;
     $('#timer').html(timer);
     setInterval(function() {
         if(timer > 0) {
