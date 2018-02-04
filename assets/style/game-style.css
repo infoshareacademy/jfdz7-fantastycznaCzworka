@@ -57,3 +57,27 @@ body {
 .timer {
     display: flex;
 }
+
+.popup {
+    background: rgba(70, 62, 62, 0.83);
+    position: fixed;
+    display: none;
+    z-index: 5000;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+.popup-open {
+    display: block;
+}
+
+.popup-container {
+    position: inherit;
+    top: 33%;
+    left: 45%;
+
+
+}
