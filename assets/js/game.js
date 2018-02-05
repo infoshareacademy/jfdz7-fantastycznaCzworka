@@ -1,5 +1,7 @@
 
 // $(window).ready(function() {
+let score = document.getElementsByClassName('score-counter')[0];
+let scoreCounter = 0;
 
 const game = {
         tilesImgs : [
@@ -36,6 +38,8 @@ const game = {
         checkMatch: function () {
             if (this.flippedCards[0].querySelector('.back').style.backgroundImage === this.flippedCards[1].querySelector('.back').style.backgroundImage) {
                 this.flippedCards = [];
+
+                score.innerText = ++scoreCounter;
 
             }
             else {

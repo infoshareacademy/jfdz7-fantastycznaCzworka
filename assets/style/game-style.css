@@ -70,3 +70,11 @@ body {
 .timer {
     display: flex;
 }
+
+.score {
+    display: flex;
+}
+.score-text {
+    font-size: 30px;
+    margin: 0 13%;
+}
