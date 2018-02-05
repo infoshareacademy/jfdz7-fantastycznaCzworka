@@ -58,26 +58,30 @@ body {
     display: flex;
 }
 
+.popup-container h2 {
+    font-size: 2em;
+
+}
+
+.popup-container h1 {
+    font-size: 3em;
+
+}
+
 .popup {
-    background: rgba(70, 62, 62, 0.83);
+    background: rgb(208, 182, 144);
     position: fixed;
     display: none;
     z-index: 5000;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
+    height: 54%;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
     text-align: center;
+    border-radius: 10px;
+    border: solid 4px #9b3f3f;
 }
 
 .popup-open {
     display: block;
-}
-
-.popup-container {
-    position: inherit;
-    top: 33%;
-    left: 45%;
-
-
 }
