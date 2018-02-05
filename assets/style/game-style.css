@@ -73,13 +73,13 @@ body {
     position: fixed;
     display: none;
     z-index: 5000;
-    height: 54%;
-    width: 55%;
     left: 50%;
+    top: 20%;
     transform: translate(-50%, 0);
     text-align: center;
     border-radius: 10px;
     border: solid 4px #9b3f3f;
+    padding: 100px;
 }
 
 .popup-open {

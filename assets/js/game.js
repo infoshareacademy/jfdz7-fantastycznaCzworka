@@ -1,4 +1,7 @@
 const $timer = $('#timer');
+const $endGamePopup = $('#endgame');
+
+//Endgame Popup
 
 const countTime = () => {
     let timer = 60;
@@ -16,10 +19,11 @@ const countTime = () => {
 
 $(window).on('load', countTime);
 
+
 //Popup script
 
 const openPopup = () => {
-    $('#endgame').toggleClass('popup-open')
+    $endGamePopup.toggleClass('popup-open')
 };
 
 $('#openbutton').on('click', openPopup);
