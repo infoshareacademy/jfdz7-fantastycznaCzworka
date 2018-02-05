@@ -1,6 +1,8 @@
 const $timer = $('#timer');
 const $endGame = $('#endgame');
 // $(window).ready(function() {
+let score = document.getElementsByClassName('score-counter')[0];
+let scoreCounter = 0;
 
 
 const game = {
@@ -39,14 +41,16 @@ const game = {
         if (this.flippedCards[0].querySelector('.back').style.backgroundImage === this.flippedCards[1].querySelector('.back').style.backgroundImage) {
             this.flippedCards = [];
 
-        }
-        else {
-            setTimeout(this.flipBack.bind(this), 1000);
-        }
-    },
-    flipBack: function () {
-        this.flippedCards[0].classList.toggle('flipped');
-        this.flippedCards[1].classList.toggle('flipped');
+                score.innerText = ++scoreCounter;
+
+            }
+            else {
+                setTimeout(this.flipBack.bind(this), 1000);
+            }
+        },
+        flipBack: function () {
+            this.flippedCards[0].classList.toggle('flipped');
+            this.flippedCards[1].classList.toggle('flipped');
 
         this.flippedCards = [];
     },

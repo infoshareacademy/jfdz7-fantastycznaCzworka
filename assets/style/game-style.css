@@ -76,6 +76,14 @@ body {
     display: flex;
 }
 
+.score {
+    display: flex;
+}
+.score-text {
+    font-size: 30px;
+    margin: 0 13%;
+}
+
 .popup-container h2 {
     font-size: 2em;
 }
