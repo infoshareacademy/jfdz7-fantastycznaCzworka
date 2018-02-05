@@ -27,6 +27,7 @@ body {
     background-color: #9B3F3F;
     transform-style: preserve-3d;
     transition: transform 0.5s;
+    cursor:pointer;
 }
 .card.flipped {
     transform: rotateY(180deg);

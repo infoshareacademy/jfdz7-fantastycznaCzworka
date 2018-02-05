@@ -4,6 +4,13 @@
 const game = {
         tilesImgs : [
             'url("./assets/photo/cursor.svg")',
+            'url("./assets/photo/pen.svg")',
+            'url("./assets/photo/diamond.svg")',
+            'url("./assets/photo/cake.svg")',
+            'url("./assets/photo/clock.svg")',
+            'url("./assets/photo/box.svg")',
+            'url("./assets/photo/video.svg")',
+            'url("./assets/photo/callendar.svg")',
             'url("./assets/photo/cursor.svg")',
             'url("./assets/photo/pen.svg")',
             'url("./assets/photo/diamond.svg")',
@@ -32,7 +39,7 @@ const game = {
 
             }
             else {
-                setTimeout(this.flipBack, 1000);
+                setTimeout(this.flipBack.bind(this), 1000);
             }
         },
         flipBack: function () {
@@ -42,7 +49,7 @@ const game = {
             this.flippedCards = [];
         },
         shuffle :  function() {
-            // Create a clone of the array so that we don't shuffle the original one
+            // Create a clone of the array
             let arrClone = this.tilesImgs.slice(0);
             // Shuffle the array
             return arrClone.sort(() => Math.random() - 0.5);
@@ -63,6 +70,7 @@ const game = {
             }, 1000);
 
             this.tilesImgs = this.shuffle();
+            console.log(this.tilesImgs);
             let cards = document.querySelectorAll('.card');
             for (let i = 0; i < cards.length; i++) {
                 if(cards[i].classList.contains('flipped')) {
