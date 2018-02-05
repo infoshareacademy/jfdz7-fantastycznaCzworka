@@ -17,14 +17,20 @@ body {
     margin: 2%;
     height: 120px;
     position: relative;
+    perspective: 800px;
 }
 
 .card {
     width: 100%;
     height: 100%;
     position: absolute;
+    background-color: #9B3F3F;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
 }
-
+.card.flipped {
+    transform: rotateY(180deg);
+}
 .card div {
     margin: 0;
     display: block;
@@ -37,9 +43,15 @@ body {
 
 .card .front {
     background: url('../photo/logogz.svg') no-repeat;
-    background-color: #9B3F3F;
+
     background-size: 100%;
     background-position: center;
+}
+.card .back {
+    background: url('#') no-repeat;
+    background-size: 100px 100px;
+    background-position: center;
+    transform: rotateY(180deg);
 }
 
 .timer-text {
