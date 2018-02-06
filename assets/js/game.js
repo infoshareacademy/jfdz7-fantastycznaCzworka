@@ -1,5 +1,7 @@
-const $timer = $('#timer');
-const $endGame = $('#endgame');
+let countDown;
+let timeLoss;
+let timer = document.getElementsByClassName('timer')[0];
+let endGame = document.getElementsByClassName('endgame')[0];
 // $(window).ready(function() {
 let score = document.getElementsByClassName('score-counter')[0];
 let scoreCounter = 0;
@@ -41,16 +43,16 @@ const game = {
         if (this.flippedCards[0].querySelector('.back').style.backgroundImage === this.flippedCards[1].querySelector('.back').style.backgroundImage) {
             this.flippedCards = [];
 
-                score.innerText = ++scoreCounter;
+            score.innerText = ++scoreCounter;
 
-            }
-            else {
-                setTimeout(this.flipBack.bind(this), 1000);
-            }
-        },
-        flipBack: function () {
-            this.flippedCards[0].classList.toggle('flipped');
-            this.flippedCards[1].classList.toggle('flipped');
+        }
+        else {
+            setTimeout(this.flipBack.bind(this), 1000);
+        }
+    },
+    flipBack: function () {
+        this.flippedCards[0].classList.toggle('flipped');
+        this.flippedCards[1].classList.toggle('flipped');
 
         this.flippedCards = [];
     },
@@ -61,17 +63,9 @@ const game = {
 
 
     start: function () {
-        let timer = 60;
-        $timer.html(timer);
-        setInterval(function () {
-            if (timer > 0) {
-                $timer.html(--timer);
-            }
-            else {
-                console.log('koniec')
-
-            }
-        }, 1000);
+        timer.innerText = '1:00';
+        countDown = setInterval(this.decrementTime, 1000);
+        timeLoss = 59;
 
         this.tilesImgs = this.shuffle();
         console.log(this.tilesImgs);
@@ -87,19 +81,41 @@ const game = {
 
         }
 
-    },
-    endGame: function () {
 
-        if (scoreIncrementer === 8) {
-            endGame.$('#endgame-text').innerText = 'Wygrana!';
+    },
+
+    decrementTime: function () {
+        if (timeLoss === 0) {
+            timer.innerText = '0:0' + timeLoss;
+            clearInterval(countDown);
+            this.finalize();
+        }
+        if (timeLoss < 10) {
+            timer.innerText = '0:0' + timeLoss;
+        }
+        if (timeLoss >= 10) {
+            timer.innerText = '0:' + timeLoss;
+        }
+        if (scoreCounter === 8) {
+            clearInterval(countDown);
+            this.finalize();
+        }
+        timeLoss--;
+    },
+
+    finalize: function () {
+
+        $('#endGame').addClass('popup-open');
+
+        if (scoreCounter === 8) {
+            endGame.querySelector('h1').innerText = 'you win';
         }
         else {
-            endGame.$('#endgame-text').innerText = 'Przegrana!';
+            endGame.querySelector('h1').innerText = 'you lose';
         }
-        endGame.querySelector('#final-score').innerText = 'score: ' + scoreIncrementer;
-        endGame.$('#time').innerText = 'Pozostało: ' + $timer + ' sekund';
+        endGame.querySelector('#final-score').innerText = 'score: ' + scoreCounter;
+        endGame.querySelector('#time').innerText = 'time left: ' + timeLoss + ' sec.';
     }
-
 };
 game.start();
 // });
