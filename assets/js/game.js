@@ -80,15 +80,13 @@ const game = {
             cards[i].addEventListener('click', this.flip.bind(this));
 
         }
-
-
     },
 
     decrementTime: function () {
         if (timeLoss === 0) {
             timer.innerText = '0:0' + timeLoss;
             clearInterval(countDown);
-            this.finalize();
+
         }
         if (timeLoss < 10) {
             timer.innerText = '0:0' + timeLoss;
@@ -98,24 +96,12 @@ const game = {
         }
         if (scoreCounter === 8) {
             clearInterval(countDown);
-            this.finalize();
+
         }
         timeLoss--;
     },
 
-    finalize: function () {
 
-        $('#endGame').addClass('popup-open');
-
-        if (scoreCounter === 8) {
-            endGame.querySelector('h1').innerText = 'you win';
-        }
-        else {
-            endGame.querySelector('h1').innerText = 'you lose';
-        }
-        endGame.querySelector('#final-score').innerText = 'score: ' + scoreCounter;
-        endGame.querySelector('#time').innerText = 'time left: ' + timeLoss + ' sec.';
-    }
 };
 game.start();
 // });
