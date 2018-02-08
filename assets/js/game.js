@@ -1,4 +1,3 @@
-
 $(window).ready(function() {
 
     let timer = 60;
@@ -9,8 +8,6 @@ $(window).ready(function() {
         }
         else {
             console.log('koniec')
-
         }
     }, 1000);
-
 });

@@ -1,37 +1,33 @@
-*{
-    ;
-}
+* {
+    box-sizing:border-box;
 
-.popup_base{
-    top: 0;
-    display: none;
-    background-color: rgba(200, 200, 200, 0.75); /*ustawić przezroczystość*/
-    width: 100%;
-    height: 100%;
+}
+.popup_container{
     position: fixed;
     z-index: 9999;
     overflow: auto;
-}
-
-.popup_body{
-    background-color: #f9ebe3;
-    padding: 20px;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-}
-
-.popup_close{
-    position: absolute;
-    top:0;
-    right: 12px;
-    font-size: 40px;
-    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    max-width:700px;
+    width:80%;
+    min-height: 30%;
+    padding:20px 30px 30px 30px;
+    font-family:'Lato', sans-serif;
+    color:#333;
+    background: #f9ebe3;
+    border-radius:6px;
+    box-shadow:inset 0 1px 0 #f9ebe3, inset 0 0 30px #bdb2ac, 0 0 20px rgba(0,0,0,0.5), 0 1px 5px rgba(0,0,0,0.5);
+    text-align:center;
 }
 
 .btn_game_start{
+    position: relative;
+    padding: 6px;
+    cursor: pointer;
     margin: 0 auto;
     background-color: #f9ebe3;
     text-decoration: none;
+    box-shadow:inset 0 1px 0 #f9ebe3, inset 0 0 30px #bdb2ac, 0 0 20px rgba(0,0,0,0.5), 0 1px 5px rgba(0,0,0,0.5);
+
 }
+

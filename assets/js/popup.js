@@ -1,5 +1,10 @@
 window.onload = function () {
-    const idPopup = $(this).attr("popup_open");
-    $(idPopup).fadeIn("fast");
+    const popup = $(this).attr('popup_open');
+    $(popup).fadeIn('fast');
 
+
+    $('.btn_game_start').click(function () {
+        $(popup).fadeOut();
+
+    })
 };
