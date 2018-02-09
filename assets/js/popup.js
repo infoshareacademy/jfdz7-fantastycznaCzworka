@@ -3,7 +3,7 @@ window.onload = function () {
     $(popup).fadeIn('fast');
 
 
-    $('.btn_game_start').click(function () {
+    $('.btn_popup_close').click(function () {
         $(popup).fadeOut();
 
     })
