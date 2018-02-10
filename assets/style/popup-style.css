@@ -6,7 +6,7 @@
 .popup_container {
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 12%;
     transform: translate(-50%);
     z-index: 9999;
     overflow: auto;
