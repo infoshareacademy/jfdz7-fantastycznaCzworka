@@ -64,6 +64,8 @@ const game = {
         timer.innerText = '1:00';
         countDown = setInterval(this.decrementTime.bind(this), 1000);
         timeLoss = 59;
+        scoreCounter = 0;
+        score.innerText = 0;
 
     let endgamePopup = document.getElementById("endgame");
         endgamePopup.classList.add("hidden");
