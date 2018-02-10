@@ -83,7 +83,7 @@ const game = {
         if (timeLoss === 0) {
             timer.innerText = '0:0' + timeLoss;
             clearInterval(countDown);
-            this.finalize().bind(this);
+            this.finalize();
 
         }
         if (timeLoss < 10) {
@@ -94,7 +94,7 @@ const game = {
         }
         if (scoreCounter === 8) {
             clearInterval(countDown);
-            this.finalize().bind(this);
+            this.finalize();
         }
 
         timeLoss--;
@@ -103,6 +103,7 @@ const game = {
     finalize: function() {
         let endGame = document.getElementsByClassName('endgame')[0] ;
         let restart = document.getElementsByClassName('btn-again')[0];
+
         endGame.style.display = 'block';
 
         restart.addEventListener('click', this.start.bind(this));
