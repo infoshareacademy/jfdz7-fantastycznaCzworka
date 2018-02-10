@@ -102,3 +102,8 @@ body {
     display: none;
 
 }
+
+.game-result {
+    font-size: 40px
+;
+}
