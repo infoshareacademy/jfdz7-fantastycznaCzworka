@@ -99,21 +99,24 @@ const game = {
         timeLoss--;
 
     },
-    finalize: function() {
+
+    finalize: function () {
         let endGame = document.getElementsByClassName('endgame') ;
         let restart = document.getElementsByClassName('btn-again')[0];
+
+        endGame.style.display = 'block';
 
         document.querySelector(restart).addEventListener('click', restart);
 
 
         if (scoreCounter === 8) {
-            endGame.querySelector('h1').innerHTML = 'you win';
+            endGame.querySelector('h1').innerHTML = 'Wygrana!';
         }
         else {
-            endGame.querySelector('h1').innerText = 'you lose';
+            endGame.querySelector('h1').innerText = 'Przegrana!';
         }
-            endGame.querySelector('.final-score').innerHTML = 'score:' + scoreCounter;
-            endGame.querySelector('.time').innerText = 'time left' + timeLoss + 'sec.';
+            endGame.querySelector('#final-score').innerHTML = 'Punkty: ' + scoreCounter;
+            endGame.querySelector('#time').innerText = 'Pozostały czas: ' + timeLoss + ' sekund';
     }
 };
 
