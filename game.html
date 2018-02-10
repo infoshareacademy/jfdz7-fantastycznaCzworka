@@ -1,25 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <title>Memo Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/game-style.css">
+    <link rel="stylesheet" href="assets/style/popup-style.css">
 </head>
 <body>
+<div id="popup_open" class="popup_container">
+    <h1>DZIĘKUJEMY!</h1>
+    <h2>W ramach podziękowania za zapisanie się na premierę przygotowaliśmy dla Ciebie grę, miłej zabawy!</h2>
+    <h3 class="rules">ZASADY GRY:</h3>
+    <ol class="rules-list">
+        <li class="rules-item">Odkrywaj karty oraz zapamiętuj położenie poszczególnych obrazków.</li>
+        <li class="rules-item">Znajdź pasujące pary.</li>
+        <li class="rules-item">Czas na znalezienie wszystkich par to jedna minuta.</li>
+    </ol>
+    <p>ABY URUCHOMIĆ GRĘ NACIŚNIJ LOGO</p>
+    <button id="game_start" class="btn_popup_close"><img src="./assets/photo/logo_popup.png"/></button>
+</div>
 
-<section class="game-over">
-    <h1></h1>
-    <h2 class="final-score"></h2>
-    <h2 class="time"></h2>
-    <!--<button>Play Again</button>-->
+<section id="endgame" class="popup endgame hidden">
+    <section class="popup_container">
+        <h1 id="endgame-text" class="game-result"></h1>
+        <h2 id="final-score"></h2>
+        <h2 id="time"></h2>
+        <button id="btn-playagain" class="btn-again btn_popup_close">Zagraj ponownie!</button>
+    </section>
+
 </section>
 
+
 <section class="time-score-section">
-    <div id="score">TU BEDZIE WYNIK</div>
+    <section class="score">
+        <div class="score-text">WYNIK:</div>
+        <div class="score-counter"></div>
+    </section>
     <section class="timer">
-        <div class="timer-text">Pozostało:</div>
-        <div id="timer"></div>
-        <div class="timer-text">sekund</div>
+        <div id="timer" class="timer"></div>
     </section>
 </section>
 
@@ -120,11 +140,12 @@
             <div class='back'></div>
         </div>
     </div>
-
+        <button class="btn_game_start" >START</button>
 </section>
 <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
 <script src="assets/js/game.js"></script>
+<script src="assets/js/popup.js"></script>
 </body>

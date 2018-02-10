@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/style/font-awesome.min.css">
     <link rel="stylesheet" href="assets/style/style.css" type="text/css">
     <link rel="stylesheet" href="assets/style/animate.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/photo/logogz.png" type="image/png" sizes="32x32">
 
 </head>
@@ -16,9 +15,12 @@
 
 <header id="main" class="banner">
 
-        <input id="toggle-menu" type="checkbox"/>
+    <!--<div class="mobile-nav-bar">-->
         <label for="toggle-menu" class="menu-on"><img class="hamburger" src="assets/photo/menu.svg"></label>
         <label for="toggle-menu" class="menu-off"></label>
+    <input id="toggle-menu" type="checkbox"/>
+    <!--</div>-->
+    <div class="clear"></div>
 
         <nav class="primary-nav">
             <figure>
@@ -86,17 +88,20 @@
         <div class="container">
             <h2 class="heading text--center form__heading">Już nie możesz doczekać się premiery produktu ? Wystarczy
                 wypełnić poniższy formularz.</h2>
-            <form class="premiere-form" action="https://formspree.io/fantastyczna4ka.isa@gmail.com" method="POST">
+            <form class="premiere-form" target="_blank" action="https://formspree.io/fantastyczna4ka.isa@gmail.com" method="POST">
                 <div class="form__group-input">
                     <input class="form__input" type="text" name="Imię" placeholder="imię - opcjonalnie">
                     <input class="form__input" type="email" name="e-mail" required placeholder="e-mail - pole wymagane">
+
+                    <input type="hidden" name="_next" value="game.html" />
                 </div>
-                    <button class="btn form__btn antybot_btn" disabled type="submit">Powiadom mnie o premierze</button>
-                <div>
+                <div class="antybot_text">
                     <span>Potwierdź, że jesteś człowiekiem - wpisz wynik działania: </span>
+                    <br>
                     <span class="code_antybot"></span>
                     <input class="input_antybot">
                 </div>
+                    <button class="btn form__btn antybot_btn" disabled type="submit">Powiadom mnie o premierze</button>
             </form>
             <p class="form__text">Na Twoją skrzynkę przyjdzie tylko jedna wiadomość. Możesz byc pewnien, że nie
                 udostępnimy Twojego adresu e-mail osobom trzecim</p>
