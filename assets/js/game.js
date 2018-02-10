@@ -5,6 +5,7 @@ let timer = document.getElementsByClassName('timer')[0];
 let score = document.getElementsByClassName('score-counter')[0];
 let scoreCounter = 0;
 
+
 const game = {
     tilesImgs: [
         'url("./assets/photo/cursor.svg")',
@@ -62,7 +63,10 @@ const game = {
     start: function () {
         timer.innerText = '1:00';
         countDown = setInterval(this.decrementTime.bind(this), 1000);
-        timeLoss = 3;
+        timeLoss = 59;
+
+    let endgamePopup = document.getElementById("endgame");
+        endgamePopup.classList.add("hidden");
 
         this.tilesImgs = this.shuffle();
         console.log(this.tilesImgs);
@@ -83,7 +87,7 @@ const game = {
         if (timeLoss === 0) {
             timer.innerText = '0:0' + timeLoss;
             clearInterval(countDown);
-            this.finalize().bind(this);
+            this.finalize();
 
         }
         if (timeLoss < 10) {
@@ -103,7 +107,7 @@ const game = {
     finalize: function() {
         let endGame = document.getElementsByClassName('endgame')[0] ;
         let restart = document.getElementsByClassName('btn-again')[0];
-        endGame.style.display = 'block';
+        endGame.classList.remove("hidden");
 
         restart.addEventListener('click', this.start.bind(this));
 
