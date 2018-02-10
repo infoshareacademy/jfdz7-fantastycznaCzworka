@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Memo Game</title>
@@ -8,29 +8,33 @@
     <link rel="stylesheet" href="assets/style/popup-style.css">
 </head>
 <body>
+<div id="popup_open" class="popup_container">
+    <h1>DZIĘKUJEMY!</h1>
+    <h2>W ramach podziękowania za zapisanie się na premierę przygotowaliśmy dla Ciebie grę ... miłej zabawy</h2>
+    <p>ABY URUCHOMIĆ GRĘ NACIŚNIJ LOGO</p>
+    <button id="game_start" class="btn_popup_close" ><img src="./assets/photo/logo_popup.png"/></button>
+</div>
 
-    <div id="popup_open" class="popup_container">
-            <h1>DZIĘKUJEMY!</h1>
-            <h2>W ramach podziękowania za zapisanie się na premierę przygotowaliśmy dla Ciebie grę ... miłej zabawy</h2>
-            <p>ABY URUCHOMIĆ GRĘ NACIŚNIJ LOGO</p>
-            <button id="game_start" class="btn_popup_close" ><img src="./assets/photo/logo_popup.png"/></button>
-    </div>
+<section id="endgame" class="popup endgame" style="display: none">
+    <section class="popup_container">
+        <h1 id="endgame-text"></h1>
+        <h2 id="final-score"></h2>
+        <h2 id="time"></h2>
+        <button id="btn-playagain" class="btn-again">Zagraj ponownie!</button>
+    </section>
 
-<section class="game-over">
-    <h1></h1>
-    <h2 class="final-score"></h2>
-    <h2 class="time"></h2>
-    <!--<button>Play Again</button>-->
 </section>
 
+
 <section class="time-score-section">
-    <div id="score">TU BEDZIE WYNIK</div>
-    <button class="btn_game_start" >START</button>
-    <section class="timer">
-        <div class="timer-text">Pozostało:</div>
-        <div id="timer"></div>
-        <div class="timer-text">sekund</div>
-    </section>
+        <section class="score">
+            <div class="score-text">WYNIK: </div>
+            <div class="score-counter"></div>
+        </section>
+        <button class="btn_game_start" >START</button>
+        <section class="timer">
+            <div id="timer" class="timer"></div>
+        </section>
 </section>
 
 <section class="table-cards">

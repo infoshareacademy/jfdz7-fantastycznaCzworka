@@ -17,14 +17,23 @@ body {
     margin: 2%;
     height: 120px;
     position: relative;
+    perspective: 800px;
 }
 
 .card {
     width: 100%;
     height: 100%;
     position: absolute;
-}
+    background-color: #9B3F3F;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor:pointer;
+    border-radius: 5px;
 
+}
+.card.flipped {
+    transform: rotateY(180deg);
+}
 .card div {
     margin: 0;
     display: block;
@@ -37,9 +46,18 @@ body {
 
 .card .front {
     background: url('../photo/logogz.svg') no-repeat;
-    background-color: #9B3F3F;
+    border-radius: 5px;
+
     background-size: 100%;
     background-position: center;
+}
+.card .back {
+    border-radius: 5px;
+
+    background: url('#') no-repeat;
+    background-size: 100px 100px;
+    background-position: center;
+    transform: rotateY(180deg);
 }
 
 .timer-text {
@@ -56,4 +74,38 @@ body {
 
 .timer {
     display: flex;
+}
+
+.score {
+    display: flex;
+}
+.score-text {
+    font-size: 30px;
+    margin: 0 13%;
+}
+
+.popup-container h2 {
+    font-size: 2em;
+}
+
+.popup-container h1 {
+    font-size: 3em;
+}
+
+.popup {
+    background: rgb(208, 182, 144);
+    position: fixed;
+    display: none;
+    z-index: 5000;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    border-radius: 10px;
+    border: solid 4px #9b3f3f;
+    padding: 100px;
+}
+
+.popup-open {
+    display: block;
 }

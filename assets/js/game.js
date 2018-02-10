@@ -1,17 +1,122 @@
-$(window).ready(function() {
-        const gameStart = $('.btn_game_start');
-        const time = $('#timer').html(timer);
+let countDown;
+let timeLoss;
+let timer = document.getElementsByClassName('timer')[0];
+// $(window).ready(function() {
+let score = document.getElementsByClassName('score-counter')[0];
+let scoreCounter = 0;
 
-        $(gameStart).click(function () {
-            let timer = 60;
+const game = {
+    tilesImgs: [
+        'url("./assets/photo/cursor.svg")',
+        'url("./assets/photo/pen.svg")',
+        'url("./assets/photo/diamond.svg")',
+        'url("./assets/photo/cake.svg")',
+        'url("./assets/photo/clock.svg")',
+        'url("./assets/photo/box.svg")',
+        'url("./assets/photo/video.svg")',
+        'url("./assets/photo/callendar.svg")',
+        'url("./assets/photo/cursor.svg")',
+        'url("./assets/photo/pen.svg")',
+        'url("./assets/photo/diamond.svg")',
+        'url("./assets/photo/cake.svg")',
+        'url("./assets/photo/clock.svg")',
+        'url("./assets/photo/box.svg")',
+        'url("./assets/photo/video.svg")',
+        'url("./assets/photo/callendar.svg")'
+    ],
+    flippedCards: [],
+    flip: function (e) {
+        if (!e.target.parentElement.classList.contains('flipped') && this.flippedCards.length < 2) {
+            e.target.parentElement.classList.toggle('flipped');
 
-        setInterval(function() {
-            if(timer > 0) {
-                $('#timer').html(--timer);
+            this.flippedCards.push(e.target.parentElement);
+
+            if (this.flippedCards.length === 2) {
+                this.checkMatch();
             }
-            else {
-                console.log('koniec')
+        }
+        console.log(this.flippedCards);
+    },
+    checkMatch: function () {
+        if (this.flippedCards[0].querySelector('.back').style.backgroundImage === this.flippedCards[1].querySelector('.back').style.backgroundImage) {
+            this.flippedCards = [];
+
+            score.innerText = ++scoreCounter;
+
+        }
+        else {
+            setTimeout(this.flipBack.bind(this), 1000);
+        }
+    },
+    flipBack: function () {
+        this.flippedCards[0].classList.toggle('flipped');
+        this.flippedCards[1].classList.toggle('flipped');
+
+        this.flippedCards = [];
+    },
+    shuffle: function () {
+        let arrClone = this.tilesImgs.slice(0);
+        return arrClone.sort(() => Math.random() - 0.5);
+    },
+
+    start: function () {
+        timer.innerText = '1:00';
+        countDown = setInterval(this.decrementTime, 1000);
+        timeLoss = 59;
+
+        this.tilesImgs = this.shuffle();
+        console.log(this.tilesImgs);
+        let cards = document.querySelectorAll('.card');
+        for (let i = 0; i < cards.length; i++) {
+            if (cards[i].classList.contains('flipped')) {
+                cards[i].classList.toggle('flipped');
             }
-        }, 1000);
-    })
+            cards[i].querySelector('.back').style.backgroundImage = this.tilesImgs[i];
+
+
+            cards[i].addEventListener('click', this.flip.bind(this));
+        }
+
+    },
+
+    decrementTime: function () {
+        if (timeLoss === 0) {
+            timer.innerText = '0:0' + timeLoss;
+            clearInterval(countDown);
+
+        }
+        if (timeLoss < 10) {
+            timer.innerText = '0:0' + timeLoss;
+        }
+        if (timeLoss >= 10) {
+            timer.innerText = '0:' + timeLoss;
+        }
+        if (scoreCounter === 8) {
+            clearInterval(countDown);
+
+        }
+
+        timeLoss--;
+
+    },
+    finalize: function() {
+        let endGame = document.getElementsByClassName('endgame') ;
+        let restart = document.getElementsByClassName('btn-again')[0];
+
+        document.querySelector(restart).addEventListener('click', restart);
+
+
+        if (scoreCounter === 8) {
+            endGame.querySelector('h1').innerHTML = 'you win';
+        }
+        else {
+            endGame.querySelector('h1').innerText = 'you lose';
+        }
+            endGame.querySelector('.final-score').innerHTML = 'score:' + scoreCounter;
+            endGame.querySelector('.time').innerText = 'time left' + timeLoss + 'sec.';
+    }
+};
+
+$('.btn_game_start').click('click', function () {
+    game.start();
 });
