@@ -3,7 +3,7 @@ $(function () {
     const inputAntybot = $('.input_antybot');
     const a = Math.round(Math.random()*10);
     const b = Math.round(Math.random()*10);
-    $(codeAntybot).text(`${a} + ${b}`);
+    $(codeAntybot).text(`${a} + ${b} = `);
     const sum = a + b;
 
     function isInputInvalid() {
