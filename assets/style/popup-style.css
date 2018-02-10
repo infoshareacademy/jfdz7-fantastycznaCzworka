@@ -46,3 +46,16 @@
     font-family: 'Lato', sans-serif;
     text-decoration: none;
 }
+
+.rules-item {
+text-align: start;
+}
+
+.rules-list {
+font-size: 20px;
+    margin: 25px;
+}
+
+.rules {
+    font-size: 27px;
+}
