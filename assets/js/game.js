@@ -5,6 +5,7 @@ let timer = document.getElementsByClassName('timer')[0];
 let score = document.getElementsByClassName('score-counter')[0];
 let scoreCounter = 0;
 
+
 const game = {
     tilesImgs: [
         'url("./assets/photo/cursor.svg")',
@@ -62,7 +63,12 @@ const game = {
     start: function () {
         timer.innerText = '1:00';
         countDown = setInterval(this.decrementTime.bind(this), 1000);
-        timeLoss = 3;
+        timeLoss = 59;
+        scoreCounter = 0;
+        score.innerText = 0;
+
+    let endgamePopup = document.getElementById("endgame");
+        endgamePopup.classList.add("hidden");
 
         this.tilesImgs = this.shuffle();
         console.log(this.tilesImgs);
@@ -94,7 +100,7 @@ const game = {
         }
         if (scoreCounter === 8) {
             clearInterval(countDown);
-            this.finalize();
+            this.finalize().bind(this);
         }
 
         timeLoss--;
@@ -103,20 +109,19 @@ const game = {
     finalize: function() {
         let endGame = document.getElementsByClassName('endgame')[0] ;
         let restart = document.getElementsByClassName('btn-again')[0];
-
-        endGame.style.display = 'block';
+        endGame.classList.remove("hidden");
 
         restart.addEventListener('click', this.start.bind(this));
 
 
         if (scoreCounter === 8) {
-            endGame.querySelector('h1').innerHTML = 'you win';
+            endGame.querySelector('h1').innerHTML = 'Wygrana!';
         }
         else {
-            endGame.querySelector('h1').innerText = 'you lose';
+            endGame.querySelector('h1').innerText = 'Przegrana!';
         }
-            endGame.querySelector('#final-score').innerHTML = 'score:' + scoreCounter;
-            endGame.querySelector('#time').innerText = 'time left' + timeLoss + 'sec.';
+            endGame.querySelector('#final-score').innerHTML = 'Punkty: ' + scoreCounter;
+            endGame.querySelector('#time').innerText = 'Pozostały czas: ' + timeLoss + ' sekund';
     }
 };
 

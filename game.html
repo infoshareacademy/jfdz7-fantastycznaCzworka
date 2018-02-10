@@ -10,30 +10,36 @@
 <body>
 <div id="popup_open" class="popup_container">
     <h1>DZIĘKUJEMY!</h1>
-    <h2>W ramach podziękowania za zapisanie się na premierę przygotowaliśmy dla Ciebie grę ... miłej zabawy</h2>
+    <h2>W ramach podziękowania za zapisanie się na premierę przygotowaliśmy dla Ciebie grę, miłej zabawy!</h2>
+    <h3 class="rules">ZASADY GRY:</h3>
+    <ol class="rules-list">
+        <li class="rules-item">Odkrywaj karty oraz zapamiętuj położenie poszczególnych obrazków.</li>
+        <li class="rules-item">Znajdź pasujące pary.</li>
+        <li class="rules-item">Czas na znalezienie wszystkich par to jedna minuta.</li>
+    </ol>
     <p>ABY URUCHOMIĆ GRĘ NACIŚNIJ LOGO</p>
-    <button id="game_start" class="btn_popup_close" ><img src="./assets/photo/logo_popup.png"/></button>
+    <button id="game_start" class="btn_popup_close"><img src="./assets/photo/logo_popup.png"/></button>
 </div>
 
-<section id="endgame" class="popup endgame" style="display: none">
+<section id="endgame" class="popup endgame hidden">
     <section class="popup_container">
-        <h1 id="endgame-text"></h1>
+        <h1 id="endgame-text" class="game-result"></h1>
         <h2 id="final-score"></h2>
         <h2 id="time"></h2>
-        <button id="btn-playagain" class="btn-again">Zagraj ponownie!</button>
+        <button id="btn-playagain" class="btn-again btn_popup_close">Zagraj ponownie!</button>
     </section>
 
 </section>
 
 
 <section class="time-score-section">
-        <section class="score">
-            <div class="score-text">WYNIK: </div>
-            <div class="score-counter"></div>
-        </section>
-        <section class="timer">
-            <div id="timer" class="timer"></div>
-        </section>
+    <section class="score">
+        <div class="score-text">WYNIK:</div>
+        <div class="score-counter"></div>
+    </section>
+    <section class="timer">
+        <div id="timer" class="timer"></div>
+    </section>
 </section>
 
 <section class="table-cards">
