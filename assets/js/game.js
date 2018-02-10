@@ -71,15 +71,12 @@ const game = {
         endgamePopup.classList.add("hidden");
 
         this.tilesImgs = this.shuffle();
-        console.log(this.tilesImgs);
         let cards = document.querySelectorAll('.card');
         for (let i = 0; i < cards.length; i++) {
             if (cards[i].classList.contains('flipped')) {
                 cards[i].classList.toggle('flipped');
             }
             cards[i].querySelector('.back').style.backgroundImage = this.tilesImgs[i];
-
-
             cards[i].addEventListener('click', this.flip.bind(this));
         }
 

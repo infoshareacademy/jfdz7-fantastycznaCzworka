@@ -55,7 +55,7 @@ body {
     border-radius: 5px;
 
     background: url('#') no-repeat;
-    background-size: 100px 100px;
+    background-size: 80px 80px;
     background-position: center;
     transform: rotateY(180deg);
 }
