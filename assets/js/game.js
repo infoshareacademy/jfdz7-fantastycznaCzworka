@@ -61,8 +61,8 @@ const game = {
 
     start: function () {
         timer.innerText = '1:00';
-        countDown = setInterval(this.decrementTime, 1000);
-        timeLoss = 59;
+        countDown = setInterval(this.decrementTime.bind(this), 1000);
+        timeLoss = 3;
 
         this.tilesImgs = this.shuffle();
         console.log(this.tilesImgs);
@@ -83,6 +83,7 @@ const game = {
         if (timeLoss === 0) {
             timer.innerText = '0:0' + timeLoss;
             clearInterval(countDown);
+            this.finalize().bind(this);
 
         }
         if (timeLoss < 10) {
@@ -93,17 +94,18 @@ const game = {
         }
         if (scoreCounter === 8) {
             clearInterval(countDown);
-
+            this.finalize().bind(this);
         }
 
         timeLoss--;
 
     },
     finalize: function() {
-        let endGame = document.getElementsByClassName('endgame') ;
+        let endGame = document.getElementsByClassName('endgame')[0] ;
         let restart = document.getElementsByClassName('btn-again')[0];
+        endGame.style.display = 'block';
 
-        document.querySelector(restart).addEventListener('click', restart);
+        restart.addEventListener('click', this.start.bind(this));
 
 
         if (scoreCounter === 8) {
@@ -112,8 +114,8 @@ const game = {
         else {
             endGame.querySelector('h1').innerText = 'you lose';
         }
-            endGame.querySelector('.final-score').innerHTML = 'score:' + scoreCounter;
-            endGame.querySelector('.time').innerText = 'time left' + timeLoss + 'sec.';
+            endGame.querySelector('#final-score').innerHTML = 'score:' + scoreCounter;
+            endGame.querySelector('#time').innerText = 'time left' + timeLoss + 'sec.';
     }
 };
 
