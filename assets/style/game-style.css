@@ -106,3 +106,14 @@ body {
     font-size: 40px
 ;
 }
+
+@media screen and (max-width: 768px) {
+    .card .back {
+        background-size: 30px 30px;
+    }
+
+    .container {
+        height: 45px;
+    }
+
+}
