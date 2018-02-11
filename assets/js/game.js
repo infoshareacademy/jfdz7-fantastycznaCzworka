@@ -61,6 +61,7 @@ const game = {
     },
 
     start: function () {
+        clearInterval(countDown);
         timer.innerText = '1:00';
         countDown = setInterval(this.decrementTime.bind(this), 1000);
         timeLoss = 59;
