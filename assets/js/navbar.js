@@ -1,52 +1,33 @@
-
-    $(window).on('scroll', function() {
-        if($(document).scrollTop() > 100) {
-            $('nav').addClass('shrink');
-
-        }
-        else {
-            $('nav').removeClass('shrink');
-        }
-
-
-
-    });
-
+let $anchorLinks = $('.menu-nav__list').find('a[href^="#"]');
 const $page = $('body, html');
-function changePageTitle() {
-    const anchor = $(this).attr('href');
-    const $activeEl = $('.active');
 
-
-}
 
 function scrollToSection() {
     const animationTime = 500;
     const anchor = $(this).attr('href');
-
-    $(this)
-        .parent()
-        .addClass('active')
-        .siblings()
-        .removeClass('active');
-
     $page.animate({ scrollTop: $(anchor).offset().top }, animationTime);
 }
-function getCoordinateSection() {
+function setClassActiveOnScroll() {
+    const $active = $('.active');
     const $sections = $('.anchor');
-    $sections.each(function () {
-        console.log($(document).scrollTop());
-        console.log($(this).offset().top);
-         if($(document).scrollTop() ===  $(this).offset().top) {
-
-            document.title = $(this).text();
+    $sections.each(function (i) {
+         if($(window).scrollTop() + 20 >=  $(this).offset().top) {
+             $('.menu-nav__list-item a').removeClass('active');
+            $anchorLinks.eq(i).addClass('active');
          }
-         else console.log('blad');
     });
+    document.title = $active.text();
 }
 
+$(window).on('scroll', function() {
+    if($(document).scrollTop() > 100) {
+        $('nav').addClass('shrink');
 
-let $anchorLinks = $('.menu-nav__list').find('a[href^="#"]');
-$(window).on('scroll', getCoordinateSection);
+    }
+    else {
+        $('nav').removeClass('shrink');
+    }
+});
+$(window).on('scroll', setClassActiveOnScroll);
 $anchorLinks.on('click',scrollToSection);
 
