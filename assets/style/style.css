@@ -343,7 +343,7 @@ figure {
     color: #ffffff;
 }
 
-.form__btn:hover {
+.form__btn:hover, .form__btn:disabled {
     opacity: 0.7;
 }
 
