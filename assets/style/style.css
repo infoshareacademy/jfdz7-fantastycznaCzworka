@@ -14,17 +14,17 @@ body {
 button {
     font-family: 'Lato', sans-serif;
 }
-.antybot_text{
-    text-align: center;
-    text-shadow: 4px 3px 7px rgb(62, 59, 59);
-}
-.input_antybot {
+/*.antybot_text{*/
+    /*text-align: center;*/
+    /*text-shadow: 4px 3px 7px rgb(62, 59, 59);*/
+/*}*/
+/*.input_antybot {*/
 
-    padding: 5px;
-    border: 1px;
-    border-radius: 10px;
+    /*padding: 5px;*/
+    /*border: 1px;*/
+    /*border-radius: 10px;*/
 
-}
+/*}*/
 .scroll-top {
     transition: visibility 0.8s, opacity 0.8s;
     position: fixed;
@@ -192,6 +192,10 @@ nav.primary-nav {
     background: rgba(113, 43, 40, 0.7);
     width: 80%;
     margin: 0 auto;
+    line-height: 1.8;
+    border: 10px solid transparent;
+    border-radius: 5px;
+
 }
 
 p {
@@ -247,7 +251,51 @@ figure {
     border-radius: .25rem;
     border: none;
 }
+.app_form{
+    position: absolute;
+    size: 20px;
+    top: 100%;
+    padding: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.app_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 10px solid transparent;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(113, 43, 40, 0.7);
+    text-decoration: none;
+}
 
+.newsletter_btn {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.newsletter_btn a {
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+
+}
+.newsletter_form {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
 .text--center {
     text-align: center;
 }
@@ -304,12 +352,6 @@ figure {
     font-size: 23px;
 }
 
-.premiere-form {
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
-}
-
 .form__heading, .form__text {
     text-shadow: 4px 3px 7px rgb(62, 59, 59);
 }
@@ -318,6 +360,12 @@ figure {
     display: flex;
     flex-direction: column;
     flex: 100%;
+
+}
+
+.form__text{
+    font-size: 15px;
+    text-align: center;
 
 }
 
@@ -685,3 +733,9 @@ footer {
         flex: 0 50%;
     }
 }
+/*newsletter*/
+.email-text {
+    margin-top: 2em;
+    font-size: 0.75em;
+}
+
