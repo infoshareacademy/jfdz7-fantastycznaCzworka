@@ -14,17 +14,17 @@ body {
 button {
     font-family: 'Lato', sans-serif;
 }
-/*.antybot_text{*/
-    /*text-align: center;*/
-    /*text-shadow: 4px 3px 7px rgb(62, 59, 59);*/
-/*}*/
-/*.input_antybot {*/
+.antybot_text{
+    text-align: center;
+    text-shadow: 4px 3px 7px rgb(62, 59, 59);
+}
+.input_antybot {
 
-    /*padding: 5px;*/
-    /*border: 1px;*/
-    /*border-radius: 10px;*/
+    padding: 5px;
+    border: 1px;
+    border-radius: 10px;
 
-/*}*/
+}
 .scroll-top {
     transition: visibility 0.8s, opacity 0.8s;
     position: fixed;
@@ -192,10 +192,6 @@ nav.primary-nav {
     background: rgba(113, 43, 40, 0.7);
     width: 80%;
     margin: 0 auto;
-    line-height: 1.8;
-    border: 10px solid transparent;
-    border-radius: 5px;
-
 }
 
 p {
@@ -251,6 +247,7 @@ figure {
     border-radius: .25rem;
     border: none;
 }
+/*newsletter*/
 .app_form{
     position: absolute;
     size: 20px;
@@ -296,6 +293,7 @@ figure {
     justify-content: center;
     flex-flow: wrap;
 }
+/**/
 .text--center {
     text-align: center;
 }
@@ -352,6 +350,12 @@ figure {
     font-size: 23px;
 }
 
+.premiere-form {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
 .form__heading, .form__text {
     text-shadow: 4px 3px 7px rgb(62, 59, 59);
 }
@@ -360,12 +364,6 @@ figure {
     display: flex;
     flex-direction: column;
     flex: 100%;
-
-}
-
-.form__text{
-    font-size: 15px;
-    text-align: center;
 
 }
 
@@ -562,8 +560,29 @@ footer {
         flex: 0 100%;
     }
 
+    .banner{
+        height: 65%;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .description__text {
+        background: rgba(113, 43, 40, 0.7);
+        width: 90%;
+        margin: 0 auto;
+        font-size: 15px;
 }
 
+    .app_btn{
+    font-size: 14px;
+    padding: 10px 20px;
+}
+    .app_form {
+        top: 33%;
+    }
+}
 @media screen and (min-width: 576px) {
     .form__group-input {
         flex-direction: row;
@@ -630,6 +649,9 @@ footer {
     .functionality-cont2 {
         margin: 0px 100px 0px 180px;
     }
+
+    .app_form {
+        top: 33%;    }
 }
 
 @media screen and (min-width: 992px) {
@@ -718,6 +740,9 @@ footer {
     .logo {
         width: 80px;
     }
+    .app_form{
+        top: 80%;
+    }
 }
 
 @media screen and (min-width: 1201px) {
@@ -732,10 +757,7 @@ footer {
     .funcionality__box2 {
         flex: 0 50%;
     }
+    .app_form{
+        top: 75%;
+    }
 }
-/*newsletter*/
-.email-text {
-    margin-top: 2em;
-    font-size: 0.75em;
-}
-

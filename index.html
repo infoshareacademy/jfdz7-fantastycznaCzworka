@@ -29,7 +29,7 @@
         </figure>
         <ul class="menu-nav__list">
             <li class="menu-nav__list-item"><a href="#functions">Funkcje</a></li>
-            <li class="menu-nav__list-item"><a href="#newsletter">Zapisz się na newsletter</a></li>
+            <li class="menu-nav__list-item"><a href="#formsection">Zapisz się na newsletter</a></li>
             <li class="menu-nav__list-item"><a href="#functions2">Szczegóły</a></li>
             <li class="menu-nav__list-item"><a href="#about-team">Zespół</a></li>
         </ul>
@@ -87,34 +87,43 @@
         </div>
 
     </section>
+
     <div id="form" class="anchor"></div>
-    <section class="section-form" id="newsletter">
+    <section class="section-form" id="formsection"> <!-- Fromularz poniej-->
         <div class="container">
             <h2 class="heading text--center form__heading">Zapisz się na newsletter i bądź na bieżąco z naszą ofertą!</h2>
-            <form class="newsletter_form" target="_blank"  method="POST">
+            <form class="premiere-form" target="_blank" action="https://formspree.io/fantastyczna4ka.isa@gmail.com" method="POST">
                 <div class="form__group-input">
                     <input class="form__input" type="text" name="Imię" placeholder="imię - opcjonalnie">
                     <input class="form__input" type="email" name="e-mail" required placeholder="e-mail - pole wymagane">
+
+                    <input type="hidden" name="_next" value="game.html" />
                 </div>
-                    <button class="btn form__btn" disabled type="submit">Zapisz się !</button>
+                <div class="antybot_text">
+                    <span>Potwierdź, że jesteś człowiekiem - wpisz wynik działania: </span>
+                    <br>
+                    <span class="code_antybot"></span>
+                    <input class="input_antybot">
+                </div>
+                <button class="btn form__btn antybot_btn" disabled type="submit">Zapisz się !</button>
             </form>
-            </div>
-                <p class="form__text"><b>Na Twoją skrzynkę przyjdzie tylko jedna wiadomość</b>
-                    </br></br>
-                    </br></br>
-                    Generator Życzeń Sp. z o.o. z siedziba w Gdańsku w celach: marketingu bezpośredniego dotyczącego
-                własnych produktów i usług. Dane w tym celu przetwarzane będą na podstawie art. 6 ust. 1 lit. a)
-                Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 roku
-                w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie
-                swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).
-                Dane będą przechowywane przez okres 10 lat. Osoba, której dane dotyczą,
-                ma prawo dostępu do treści swoich danych osobowych oraz prawo ich sprostowania,
-                usunięcia, ograniczenia przetwarzania, prawo do przenoszenia danych, prawo wniesienia sprzeciwu,
-                prawo do cofnięcia zgody w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania,
-                którego dokonano na podstawie zgody przed jej cofnięciem. W celu realizacji uprawnień,
-                osoba której dane dotyczą możne wysłać stosowną wiadomość e-mail na adres: fantastyczna4ka.isa@gmail.com </p>
+            <p class="form__text"><b>Na Twoją skrzynkę przyjdzie tylko jedna wiadomość</b>
+            </br></br>
+            </br></br>
+            Generator Życzeń Sp. z o.o. z siedziba w Gdańsku w celach: marketingu bezpośredniego dotyczącego
+            własnych produktów i usług. Dane w tym celu przetwarzane będą na podstawie art. 6 ust. 1 lit. a)
+            Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 roku
+            w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie
+            swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).
+            Dane będą przechowywane przez okres 10 lat. Osoba, której dane dotyczą,
+            ma prawo dostępu do treści swoich danych osobowych oraz prawo ich sprostowania,
+            usunięcia, ograniczenia przetwarzania, prawo do przenoszenia danych, prawo wniesienia sprzeciwu,
+            prawo do cofnięcia zgody w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania,
+            którego dokonano na podstawie zgody przed jej cofnięciem. W celu realizacji uprawnień,
+            osoba której dane dotyczą możne wysłać stosowną wiadomość e-mail na adres: fantastyczna4ka.isa@gmail.com </p>
         </div>
     </section>
+
     <div class="anchor" id="functions2"></div>
     <section class="functionality2 animated" id="functions_2" >
         <div class="container">
@@ -240,7 +249,7 @@
                 </figure>
                 <h3>Ewa Węgierska</h3>
                 <p class="contact-person"><a target="_blank" href="https://www.linkedin.com/in/ewa-wo%C5%BAniak-w%C4%99gierska-31ba8238/"><img class="contact-img" src="assets/photo/linkedin.svg"></a>
-                    <a target="_blank" href="https://Ewawww.github.io/"><img class="contact-img" src="assets/photo/home.svg"></a>
+                    <a target="_blank" href="https://EwaWWW.github.io"><img class="contact-img" src="assets/photo/home.svg"></a>
                 </p>
             </div>
             <div class="person">
