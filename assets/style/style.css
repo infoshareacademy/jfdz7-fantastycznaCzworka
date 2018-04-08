@@ -247,7 +247,53 @@ figure {
     border-radius: .25rem;
     border: none;
 }
+/*newsletter*/
+.app_form{
+    position: absolute;
+    size: 20px;
+    top: 100%;
+    padding: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.app_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 10px solid transparent;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(113, 43, 40, 0.7);
+    text-decoration: none;
+}
 
+.newsletter_btn {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.newsletter_btn a {
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+
+}
+.newsletter_form {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+/**/
 .text--center {
     text-align: center;
 }
@@ -514,8 +560,29 @@ footer {
         flex: 0 100%;
     }
 
+    .banner{
+        height: 65%;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .description__text {
+        background: rgba(113, 43, 40, 0.7);
+        width: 90%;
+        margin: 0 auto;
+        font-size: 15px;
 }
 
+    .app_btn{
+    font-size: 14px;
+    padding: 10px 20px;
+}
+    .app_form {
+        top: 33%;
+    }
+}
 @media screen and (min-width: 576px) {
     .form__group-input {
         flex-direction: row;
@@ -582,6 +649,9 @@ footer {
     .functionality-cont2 {
         margin: 0px 100px 0px 180px;
     }
+
+    .app_form {
+        top: 33%;    }
 }
 
 @media screen and (min-width: 992px) {
@@ -670,6 +740,9 @@ footer {
     .logo {
         width: 80px;
     }
+    .app_form{
+        top: 80%;
+    }
 }
 
 @media screen and (min-width: 1201px) {
@@ -683,5 +756,8 @@ footer {
 
     .funcionality__box2 {
         flex: 0 50%;
+    }
+    .app_form{
+        top: 75%;
     }
 }

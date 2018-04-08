@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Generator życzeń</title>
@@ -17,78 +17,81 @@
 <header id="main" class="banner">
 
     <!--<div class="mobile-nav-bar">-->
-        <label for="toggle-menu" class="menu-on"><img class="hamburger" src="assets/photo/menu.svg"></label>
-        <label for="toggle-menu" class="menu-off"></label>
+    <label for="toggle-menu" class="menu-on"><img class="hamburger" src="assets/photo/menu.svg"></label>
+    <label for="toggle-menu" class="menu-off"></label>
     <input id="toggle-menu" type="checkbox"/>
     <!--</div>-->
     <div class="clear"></div>
 
-        <nav class="primary-nav">
-            <figure>
-                <a href="#main"><img class="logo" src="assets/photo/logogz.svg"></a>
-            </figure>
-            <ul class="menu-nav__list">
-                <li class="menu-nav__list-item"><a href="#functions">Funkcje</a></li>
-                <li class="menu-nav__list-item"><a href="#form">Zapisz się na premierę</a></li>
-                <li class="menu-nav__list-item"><a href="#functions2">Szczegóły</a></li>
-                <li class="menu-nav__list-item"><a href="#about-team">Zespół</a></li>
-            </ul>
+    <nav class="primary-nav">
+        <figure>
+            <a href="#main"><img class="logo" src="assets/photo/logogz.svg"></a>
+        </figure>
+        <ul class="menu-nav__list">
+            <li class="menu-nav__list-item"><a href="#functions">Funkcje</a></li>
+            <li class="menu-nav__list-item"><a href="#formsection">Zapisz się na newsletter</a></li>
+            <li class="menu-nav__list-item"><a href="#functions2">Szczegóły</a></li>
+            <li class="menu-nav__list-item"><a href="#about-team">Zespół</a></li>
+        </ul>
 
     </nav>
 
     <section class="description text--center animated" id="banner"> <!-- krotki opis  i tytul-->
         <div class="container">
             <h1>Generator Życzeń</h1>
-            <p class="description__text"> Prosta i intyucyjna obsługa sprawia że za pomocą kilku kliknięć ustawisz
+            <p class="description__text"> Prosta i intuicyjna obsługa sprawia że za pomocą kilku kliknięć ustawisz
                 automatyczne generowanie i
                 wysyłanie życzeń do swoich znajomych na Facebooku. Rozległa baza powoduje, że ta sama osoba nigdy nie
                 dostanie jednakowych życzeń!
             </p>
+        </div>
+        <div class="app_form">
+            <a target="_blank" href="http://app.fantastyczna-czworka.jfdz7.is-academy.pl/" class="app_btn">Przejdź do APLIKACJI!</a>
         </div>
     </section>
 </header>
 
 <div class="clear"></div>
 
-    <main> <!-- zawartość całej strony -->
-        <div class="anchor" id="functions"></div>
-        <section class="funcionality">
-            <div class="container">
-                <h2 class="heading heading-level-2 text--center">Funkcje aplikacji</h2>
-                <div class="functionality-cont">
-                    <div class="funcionality__box">
-                        <h3 class="fuctionality__text text--center">Prostota i intuicyjność </h3>
-                        <figure>
-                            <img class="functionality__image" src="assets/photo/cursor.svg"/>
-                        </figure>
-                    </div>
-                    <div class="funcionality__box">
-                        <h3 class="fuctionality__text text--center"> Istna kopalnia pomysłów</h3>
-                        <figure>
-                            <img class="functionality__image" src="assets/photo/diamond.svg"/>
-                        </figure>
-                    </div>
-                    <div class="funcionality__box">
-                        <h3 class="fuctionality__text text--center">Setki życzeń do wyboru</h3>
-                        <figure>
-                            <img class="functionality__image" src="assets/photo/box.svg"/>
-                        </figure>
-                    </div>
-                    <div class="funcionality__box">
-                        <h3 class="fuctionality__text text--center">Automatyczna wiadomość na tablicy fb znajomego</h3>
-                        <figure>
-                            <img class="functionality__image" src="assets/photo/cake.svg"/>
-                        </figure>
-                    </div>
+<main> <!-- zawartość całej strony -->
+    <div class="anchor" id="functions"></div>
+    <section class="funcionality">
+        <div class="container">
+            <h2 class="heading heading-level-2 text--center">Funkcje aplikacji</h2>
+            <div class="functionality-cont">
+                <div class="funcionality__box">
+                    <h3 class="fuctionality__text text--center">Prostota i intuicyjność </h3>
+                    <figure>
+                        <img class="functionality__image" src="assets/photo/cursor.svg"/>
+                    </figure>
+                </div>
+                <div class="funcionality__box">
+                    <h3 class="fuctionality__text text--center"> Istna kopalnia pomysłów</h3>
+                    <figure>
+                        <img class="functionality__image" src="assets/photo/diamond.svg"/>
+                    </figure>
+                </div>
+                <div class="funcionality__box">
+                    <h3 class="fuctionality__text text--center">Setki życzeń do wyboru</h3>
+                    <figure>
+                        <img class="functionality__image" src="assets/photo/box.svg"/>
+                    </figure>
+                </div>
+                <div class="funcionality__box">
+                    <h3 class="fuctionality__text text--center">Automatyczna wiadomość na tablicy fb znajomego</h3>
+                    <figure>
+                        <img class="functionality__image" src="assets/photo/cake.svg"/>
+                    </figure>
                 </div>
             </div>
+        </div>
 
     </section>
+
     <div id="form" class="anchor"></div>
     <section class="section-form" id="formsection"> <!-- Fromularz poniej-->
         <div class="container">
-            <h2 class="heading text--center form__heading">Już nie możesz doczekać się premiery produktu ? Wystarczy
-                wypełnić poniższy formularz.</h2>
+            <h2 class="heading text--center form__heading">Zapisz się na newsletter i bądź na bieżąco z naszą ofertą!</h2>
             <form class="premiere-form" target="_blank" action="https://formspree.io/fantastyczna4ka.isa@gmail.com" method="POST">
                 <div class="form__group-input">
                     <input class="form__input" type="text" name="Imię" placeholder="imię - opcjonalnie">
@@ -102,13 +105,24 @@
                     <span class="code_antybot"></span>
                     <input class="input_antybot">
                 </div>
-                    <button class="btn form__btn antybot_btn" disabled type="submit">Powiadom mnie o premierze</button>
+                <button class="btn form__btn antybot_btn" disabled type="submit">Zapisz się !</button>
             </form>
-            <p class="form__text">Na Twoją skrzynkę przyjdzie tylko jedna wiadomość. Możesz byc pewnien, że nie
-                udostępnimy Twojego adresu e-mail osobom trzecim</p>
+            <p class="form__text"><b>Na Twoją skrzynkę przyjdzie tylko jedna wiadomość</b>
+            </br></br>
+            </br></br>
+            Generator Życzeń Sp. z o.o. z siedziba w Gdańsku w celach: marketingu bezpośredniego dotyczącego
+            własnych produktów i usług. Dane w tym celu przetwarzane będą na podstawie art. 6 ust. 1 lit. a)
+            Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 roku
+            w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie
+            swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).
+            Dane będą przechowywane przez okres 10 lat. Osoba, której dane dotyczą,
+            ma prawo dostępu do treści swoich danych osobowych oraz prawo ich sprostowania,
+            usunięcia, ograniczenia przetwarzania, prawo do przenoszenia danych, prawo wniesienia sprzeciwu,
+            prawo do cofnięcia zgody w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania,
+            którego dokonano na podstawie zgody przed jej cofnięciem. W celu realizacji uprawnień,
+            osoba której dane dotyczą możne wysłać stosowną wiadomość e-mail na adres: fantastyczna4ka.isa@gmail.com </p>
         </div>
     </section>
-
 
     <div class="anchor" id="functions2"></div>
     <section class="functionality2 animated" id="functions_2" >
@@ -116,93 +130,93 @@
             <h2 class="heading heading-level-4 text--center">Informacje dodatkowe o funkcjonalności aplikacji</h2>
             <div class="functionality-cont2">
 
-                    <div class="funcionality__box2">
-                        <figure>
-                            <img class="functionality__image2" src="assets/photo/cursor.svg"/>
-                        </figure>
-                        <ul class="func">
-                            <li><h3 class="fuctionality__text">Prostota i intuicyjność</h3></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Ergonomia użytkowania</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Intuicyjny interfejs</li>
-                        </ul>
-                    </div>
+                <div class="funcionality__box2">
+                    <figure>
+                        <img class="functionality__image2" src="assets/photo/cursor.svg"/>
+                    </figure>
+                    <ul class="func">
+                        <li><h3 class="fuctionality__text">Prostota i intuicyjność</h3></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Ergonomia użytkowania</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Intuicyjny interfejs</li>
+                    </ul>
+                </div>
 
-                    <div class="funcionality__box2">
-                        <figure>
-                            <img class="functionality__image2" src="assets/photo/pen.svg"/>
-                        </figure>
-                        <ul class="func">
-                            <li><h3 class="fuctionality__text">Ułóż sam życzenia</h3></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Treść życzeń możesz sam modyfikować</li>
-                        </ul>
-                    </div>
+                <div class="funcionality__box2">
+                    <figure>
+                        <img class="functionality__image2" src="assets/photo/pen.svg"/>
+                    </figure>
+                    <ul class="func">
+                        <li><h3 class="fuctionality__text">Ułóż sam życzenia</h3></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Treść życzeń możesz sam modyfikować</li>
+                    </ul>
+                </div>
 
-                    <div class="funcionality__box2">
-                        <figure>
-                            <img class="functionality__image2" src="assets/photo/diamond.svg"/>
-                        </figure>
-                        <ul class="func">
-                            <li><h3 class="fuctionality__text">Istna kopalnia pomysłów</h3></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Unikalność stylu oraz szyku życzeń</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Możliwość używania emitikon 3D</li>
-                        </ul>
-                    </div>
+                <div class="funcionality__box2">
+                    <figure>
+                        <img class="functionality__image2" src="assets/photo/diamond.svg"/>
+                    </figure>
+                    <ul class="func">
+                        <li><h3 class="fuctionality__text">Istna kopalnia pomysłów</h3></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Unikalność stylu oraz szyku życzeń</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Możliwość używania emitikon 3D</li>
+                    </ul>
+                </div>
 
-                    <div class="funcionality__box2">
-                        <figure>
-                            <img class="functionality__image2 img_flex" src="assets/photo/cake.svg"/>
-                        </figure>
-                        <ul class="func">
-                            <li><h3 class="fuctionality__text">Automatyczna wiadomość <br/> na tablicy fb znajomego</h3></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Oryginalny sposób składania życzeń</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Pokaż innym, że pamiętasz</li>
-                        </ul>
-                    </div>
+                <div class="funcionality__box2">
+                    <figure>
+                        <img class="functionality__image2 img_flex" src="assets/photo/cake.svg"/>
+                    </figure>
+                    <ul class="func">
+                        <li><h3 class="fuctionality__text">Automatyczna wiadomość <br/> na tablicy fb znajomego</h3></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Oryginalny sposób składania życzeń</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Pokaż innym, że pamiętasz</li>
+                    </ul>
+                </div>
 
-                    <div class="funcionality__box2">
-                        <figure>
-                            <img class="functionality__image2" src="assets/photo/clock.svg"/>
-                        </figure>
-                        <ul class="func">
-                            <li><h3 class="fuctionality__text">Twój asystent</h3></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Ustaw godzinę wysłania życzeń</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Genetator wyśle życzenia za Ciebie</li>
-                        </ul>
-                    </div>
+                <div class="funcionality__box2">
+                    <figure>
+                        <img class="functionality__image2" src="assets/photo/clock.svg"/>
+                    </figure>
+                    <ul class="func">
+                        <li><h3 class="fuctionality__text">Twój asystent</h3></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Ustaw godzinę wysłania życzeń</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Genetator wyśle życzenia za Ciebie</li>
+                    </ul>
+                </div>
 
-                    <div class="funcionality__box2">
-                        <figure>
-                            <img class="functionality__image2" src="assets/photo/box.svg"/>
-                        </figure>
-                        <ul class="func">
-                            <li><h3 class="fuctionality__text">Setki życzeń do wyboru</h3></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Oferujemy szeroki wybór życzeń</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Życzenia na każdą okazję</li>
-                        </ul>
-                    </div>
+                <div class="funcionality__box2">
+                    <figure>
+                        <img class="functionality__image2" src="assets/photo/box.svg"/>
+                    </figure>
+                    <ul class="func">
+                        <li><h3 class="fuctionality__text">Setki życzeń do wyboru</h3></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Oferujemy szeroki wybór życzeń</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Życzenia na każdą okazję</li>
+                    </ul>
+                </div>
 
-                    <div class="funcionality__box2">
-                        <figure>
-                            <img class="functionality__image2" src="assets/photo/video.svg"/>
-                        </figure>
-                        <ul class="func">
-                            <li><h3 class="fuctionality__text">Video Życzenia</h3></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Nagraj miłe słowo dla znajomego</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Miła pamiątka na długie lata</li>
-                        </ul>
-                    </div>
+                <div class="funcionality__box2">
+                    <figure>
+                        <img class="functionality__image2" src="assets/photo/video.svg"/>
+                    </figure>
+                    <ul class="func">
+                        <li><h3 class="fuctionality__text">Video Życzenia</h3></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Nagraj miłe słowo dla znajomego</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Miła pamiątka na długie lata</li>
+                    </ul>
+                </div>
 
-                    <div class="funcionality__box2">
-                        <figure>
-                            <img class="functionality__image2" src="assets/photo/callendar.svg"/>
-                        </figure>
+                <div class="funcionality__box2">
+                    <figure>
+                        <img class="functionality__image2" src="assets/photo/callendar.svg"/>
+                    </figure>
 
-                        <ul class="func">
-                            <li><h3 class="fuctionality__text">Historia</h3></li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Aplikacja posiada archiwum wiadomości</li>
-                            <li><i class="fa fa-check" aria-hidden="true"></i>Eksportowanie do pliku PDF</li>
-                        </ul>
-                    </div>
+                    <ul class="func">
+                        <li><h3 class="fuctionality__text">Historia</h3></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Aplikacja posiada archiwum wiadomości</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Eksportowanie do pliku PDF</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -235,7 +249,7 @@
                 </figure>
                 <h3>Ewa Węgierska</h3>
                 <p class="contact-person"><a target="_blank" href="https://www.linkedin.com/in/ewa-wo%C5%BAniak-w%C4%99gierska-31ba8238/"><img class="contact-img" src="assets/photo/linkedin.svg"></a>
-                    <a target="_blank" href="https://Ewawww.github.io/"><img class="contact-img" src="assets/photo/home.svg"></a>
+                    <a target="_blank" href="https://EwaWWW.github.io"><img class="contact-img" src="assets/photo/home.svg"></a>
                 </p>
             </div>
             <div class="person">
